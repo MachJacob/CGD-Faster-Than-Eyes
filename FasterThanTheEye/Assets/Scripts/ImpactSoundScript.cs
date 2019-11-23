@@ -7,6 +7,7 @@ using UnityEngine;
 // or the default sound will play)
 public class ImpactSoundScript : MonoBehaviour
 {
+
     // velocity to volume modifier
     private float velToVol = 0.5F;
     private float velocityClipSplit = 10F;
@@ -22,11 +23,11 @@ public class ImpactSoundScript : MonoBehaviour
     public List<ObjectType> objectTypes = new List<ObjectType>();
     private AudioSource source;
     // Use this for initialization
-    void Start ()
+    void Awake()
     {
-        source = GetComponent<AudioSource>();
 
     }
+
 	
 	// Update is called once per frame
 	void Update () {
@@ -48,6 +49,8 @@ public class ImpactSoundScript : MonoBehaviour
         source.pitch = Random.Range(lowPitchRange, highPitchRange);
         // calculate volume depending on impact velocity
         float hitVol = collision.relativeVelocity.magnitude * velToVol;
+
+        // "setParameterValue" is showing up as red
         PlayImpact(hitVol);
     }
 
