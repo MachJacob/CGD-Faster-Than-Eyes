@@ -6,35 +6,29 @@ using UnityEngine.SceneManagement;
 
 public class SceneManagerFTTE : MonoBehaviour
 {
-    public static SceneManagerFTTE instance;
-    private bool gameOver;
-    private bool onePlayer = false;
-    private string scene = "GameScene";
-    Fade fade;
+    private bool gameOver = false;
+    [SerializeField]
+    private GameObject mainMenuCanvas;
+    [SerializeField]
+    private GameObject gameOverCanvas;
+    [SerializeField]
+    private GameObject inGameUI;
+    [SerializeField]
+    private Fade fade;
     // Start is called before the first frame update
     private void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-            fade = FindObjectOfType<Fade>();
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        mainMenuCanvas.SetActive(true);
+        gameOverCanvas.SetActive(false);
+        inGameUI.SetActive(false);
     }
-    public void LoadScene(bool onePlayer)
+    public void StartFade()
     {
-        this.onePlayer = onePlayer;
-        if (SceneManager.GetActiveScene().name == scene)
-            return;
+        mainMenuCanvas.SetActive(false);
         fade.setFade(1);
     }
     public void ExitGame()
     {
-       // UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
         Debug.Log("Game is exiting");
     }
@@ -43,39 +37,22 @@ public class SceneManagerFTTE : MonoBehaviour
     void Update()
     {
         if(fade.loadScene)
-        { 
-            SceneManager.LoadScene(scene);
-        }
-        string activeScene = SceneManager.GetActiveScene().name;
-
-        if (activeScene!= scene)
         {
-            activeScene = SceneManager.GetActiveScene().name;
-        }
-        else if(activeScene == scene && fade.loadScene)
-        {
-
-            fade.loadScene = false;
-            fade.setFade(0);
+            LoadGame();
         }
         if(gameOver)
         {
-            SceneManager.LoadScene("GameOver");
-            activeScene = SceneManager.GetActiveScene().name;
-            if (activeScene != "GameOver")
-            {
-                activeScene = SceneManager.GetActiveScene().name;
-            }
-            else if (activeScene == "GameOver")
-            {
 
-            }
+            inGameUI.SetActive(false);
+            gameOverCanvas.SetActive(true);
         }
 
     }
-    public bool GetOnePlayer()
+   private void LoadGame()
     {
-        return onePlayer;
+        inGameUI.SetActive(true);
+        mainMenuCanvas.SetActive(false);
+        fade.setFade(0);
     }
 
 }
