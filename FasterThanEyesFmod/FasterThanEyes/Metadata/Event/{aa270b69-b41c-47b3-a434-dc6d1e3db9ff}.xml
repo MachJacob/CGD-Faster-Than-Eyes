@@ -31,6 +31,11 @@
 		<relationship name="timeline">
 			<destination>{789ae341-4440-48ec-b122-b1e85234d841}</destination>
 		</relationship>
+		<relationship name="parameters">
+			<destination>{f2b4db88-b0f7-4438-b12b-a6acc4a999fb}</destination>
+			<destination>{1e784142-eff2-47b5-aa38-1bad3ca166ac}</destination>
+			<destination>{1f0aaa71-e14f-4b2c-a749-8b8440cd5cb7}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixer" id="{e022456a-4979-46d9-a664-998a510dda8a}">
 		<relationship name="masterBus">
@@ -61,6 +66,21 @@
 		</relationship>
 	</object>
 	<object class="Timeline" id="{789ae341-4440-48ec-b122-b1e85234d841}" />
+	<object class="ParameterProxy" id="{f2b4db88-b0f7-4438-b12b-a6acc4a999fb}">
+		<relationship name="preset">
+			<destination>{2812573a-ea4c-40f1-92b0-f5f48562ae20}</destination>
+		</relationship>
+	</object>
+	<object class="ParameterProxy" id="{1e784142-eff2-47b5-aa38-1bad3ca166ac}">
+		<relationship name="preset">
+			<destination>{6fa0d496-1e40-400d-910b-67882165c7ec}</destination>
+		</relationship>
+	</object>
+	<object class="ParameterProxy" id="{1f0aaa71-e14f-4b2c-a749-8b8440cd5cb7}">
+		<relationship name="preset">
+			<destination>{25ae90ec-ac83-42b0-9b22-6447f5db4435}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{533e7b32-c0ab-446d-84e2-8c2ae73ef0ed}">
 		<relationship name="effectChain">
 			<destination>{3f2bd2d6-9dfa-4105-82d3-d3460226a767}</destination>
