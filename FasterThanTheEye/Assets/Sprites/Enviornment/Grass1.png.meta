@@ -60,7 +60,11 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+<<<<<<< HEAD
+    maxTextureSize: 2048
+=======
     maxTextureSize: 512
+>>>>>>> master
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -72,7 +76,11 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+<<<<<<< HEAD
+    maxTextureSize: 2048
+=======
     maxTextureSize: 512
+>>>>>>> master
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -84,7 +92,11 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Windows Store Apps
+<<<<<<< HEAD
+    maxTextureSize: 2048
+=======
     maxTextureSize: 512
+>>>>>>> master
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -96,7 +108,11 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: tvOS
+<<<<<<< HEAD
+    maxTextureSize: 2048
+=======
     maxTextureSize: 512
+>>>>>>> master
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -108,7 +124,11 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: iPhone
+<<<<<<< HEAD
+    maxTextureSize: 2048
+=======
     maxTextureSize: 512
+>>>>>>> master
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -120,7 +140,11 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Lumin
+<<<<<<< HEAD
+    maxTextureSize: 2048
+=======
     maxTextureSize: 512
+>>>>>>> master
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -132,7 +156,11 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+<<<<<<< HEAD
+    maxTextureSize: 2048
+=======
     maxTextureSize: 512
+>>>>>>> master
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -144,7 +172,11 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+<<<<<<< HEAD
+    maxTextureSize: 2048
+=======
     maxTextureSize: 512
+>>>>>>> master
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
