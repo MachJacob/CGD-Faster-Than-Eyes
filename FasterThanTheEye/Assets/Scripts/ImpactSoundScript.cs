@@ -11,70 +11,79 @@ public class ImpactSoundScript : MonoBehaviour
     // velocity to volume modifier
     private float velToVol = 0.5F;
     private float velocityClipSplit = 10F;
-    
-    // pitch range to randomly play sound at 
-    private float lowPitchRange = .75F;
-    private float highPitchRange = 1.5F;
 
-    // array of audioclips to choose from for the relevant type
-    public AudioClip[] impactSounds;
+    private float impactWeapon = 1.0f;
+    private float impactHit = 1.0f;
 
-    // list of samples to play when bullet hits the surface
-    public List<ObjectType> objectTypes = new List<ObjectType>();
-    private AudioSource source;
+
     // Use this for initialization
     void Awake()
     {
-
+        switch (tag)
+        {
+            case "Sword":
+                impactWeapon = 1.0f;
+                break;
+            case "TwoHandedSword":
+                impactWeapon = 2.0f;
+                break;
+            case "Magic":
+                impactWeapon = 3.0f;
+                break;
+            default:
+                impactWeapon = 1.0f;
+                break;
+        }
     }
-
+    
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
     // decides which sound to play and where to play it in the world
     // on impact by searching for the tag of the object and 
     // attempting to match it to a name on the list of sounds
     private void OnCollisionEnter(Collision collision)
     {
-        for (int i = 0; i < objectTypes.Count; i++)
+
+        switch (collision.gameObject.tag)
         {
-            if (this.transform.tag == objectTypes[i].name)
-            {
-                SetObjectTypes(objectTypes[i]);
-            }
+            case "Shield":
+                impactHit = 1.0f;
+                break;
+            case "Sword":
+                impactHit = 2.0f;
+                break;
+            case "TwoHandedSword":
+                impactHit = 3.0f;
+                break;
+            case "Human":
+                impactHit = 4.0f;
+                break;
+            case "Wood":
+                impactHit = 5.0f;
+                break;
+            case "Stone":
+                impactHit = 6.0f;
+                break;
+            case "Grass":
+                impactHit = 7.0f;
+                break;
+            default:
+                impactHit = 1.0f;
+                break;
         }
-        source.pitch = Random.Range(lowPitchRange, highPitchRange);
         // calculate volume depending on impact velocity
         float hitVol = collision.relativeVelocity.magnitude * velToVol;
 
-        // "setParameterValue" is showing up as red
-        PlayImpact(hitVol);
+        PlayImpact(hitVol, collision.transform.position);
     }
 
-    // sets the impact sound to play
-    public void SetObjectTypes(ObjectType hitObject)
+    private void PlayImpact(float hitVol, Vector3 position)
     {
-        impactSounds = hitObject.impactSounds;
+        FMOD.Studio.EventInstance impactSound = FMODUnity.RuntimeManager.CreateInstance("event;/SFX/ImpactSound");
+        impactSound.setParameterByName("ImpactWeapon", impactWeapon);
+        impactSound.setParameterByName("ImpactHit", impactHit);
+        impactSound.setParameterByName("Velocity", hitVol);
+        impactSound.start();
+        impactSound.release();
     }
-
-    // plays a random sound from the array at the set pitch and volume
-    private void PlayImpact(float hitVol)
-    {
-        int n = Random.Range(1, impactSounds.Length);
-        source.clip = impactSounds[n];
-        source.PlayOneShot(source.clip, hitVol);
-
-        impactSounds[n] = impactSounds[0];
-        impactSounds[0] = source.clip;
-    }
-}
-// list of sounds
-[System.Serializable]
-public class ObjectType
-{
-    public string name;
-    public AudioClip[] impactSounds;
 }

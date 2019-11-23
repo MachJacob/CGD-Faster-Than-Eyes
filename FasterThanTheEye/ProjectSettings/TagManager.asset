@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Stone
+  - Shield
+  - Sword
+  - TwoHandedSword
+  - Magic
+  - Wood
+  - Grass
+  - Mud
+  - Human
   layers:
   - Default
   - TransparentFX

@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 19597056}
   - component: {fileID: 11402594}
   - component: {fileID: 11450346}
+  - component: {fileID: 5903731921061219729}
   m_Layer: 0
   m_Name: EnemySpellCaster
-  m_TagString: Untagged
+  m_TagString: Human
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -141,6 +142,32 @@ MonoBehaviour:
   m_MoveSpeedMultiplier: 1
   m_AnimSpeedMultiplier: 1
   m_GroundCheckDistance: 0.2
+--- !u!114 &5903731921061219729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6fda9e9af216e64fac6683bbe80a2d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!136 &2620141226937934281
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4761824375903671553}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.1
+  m_Height: 0.5
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.2, z: -0.025}
 --- !u!1001 &7468426902133376133
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -152,6 +179,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: -6507621502745489020, guid: b06e61636bc81384f95a0841d79de2d6,
+        type: 3}
+      propertyPath: m_TagString
+      value: Shield
       objectReference: {fileID: 0}
     - target: {fileID: -6057140222963153312, guid: b06e61636bc81384f95a0841d79de2d6,
         type: 3}
@@ -244,6 +276,12 @@ PrefabInstance:
 --- !u!4 &2512896975355522975 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: b06e61636bc81384f95a0841d79de2d6,
+    type: 3}
+  m_PrefabInstance: {fileID: 7468426902133376133}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4761824375903671553 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -6507621502745489020, guid: b06e61636bc81384f95a0841d79de2d6,
     type: 3}
   m_PrefabInstance: {fileID: 7468426902133376133}
   m_PrefabAsset: {fileID: 0}
