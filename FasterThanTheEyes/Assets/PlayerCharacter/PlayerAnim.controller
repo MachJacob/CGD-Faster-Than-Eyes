@@ -10,7 +10,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: Turn
-    m_EventTreshold: 0
+    m_EventTreshold: -0.01
   - m_ConditionMode: 1
     m_ConditionEvent: AttackTwo
     m_EventTreshold: 0
@@ -41,10 +41,10 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: Turn
-    m_EventTreshold: 0.01
+    m_EventTreshold: -0.01
   - m_ConditionMode: 4
     m_ConditionEvent: Turn
-    m_EventTreshold: -0.01
+    m_EventTreshold: 0.01
   - m_ConditionMode: 1
     m_ConditionEvent: AttackOne
     m_EventTreshold: 0
@@ -295,7 +295,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: Turn
-    m_EventTreshold: 0
+    m_EventTreshold: 0.01
   - m_ConditionMode: 1
     m_ConditionEvent: AttackTwo
     m_EventTreshold: 0
@@ -737,7 +737,7 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 2
+  - m_ConditionMode: 1
     m_ConditionEvent: Run
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
@@ -1197,10 +1197,10 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: Turn
-    m_EventTreshold: 0.01
+    m_EventTreshold: -0.01
   - m_ConditionMode: 4
     m_ConditionEvent: Turn
-    m_EventTreshold: -0.01
+    m_EventTreshold: 0.01
   - m_ConditionMode: 1
     m_ConditionEvent: AttackTwo
     m_EventTreshold: 0
@@ -2361,7 +2361,7 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   - m_ConditionMode: 4
     m_ConditionEvent: Turn
-    m_EventTreshold: 0
+    m_EventTreshold: -0.01
   - m_ConditionMode: 2
     m_ConditionEvent: Dead
     m_EventTreshold: 0
@@ -2564,7 +2564,7 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   - m_ConditionMode: 3
     m_ConditionEvent: Turn
-    m_EventTreshold: 0
+    m_EventTreshold: 0.01
   - m_ConditionMode: 2
     m_ConditionEvent: Dead
     m_EventTreshold: 0
@@ -3417,18 +3417,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 3
-    m_ConditionEvent: Turn
-    m_EventTreshold: 0.01
-  - m_ConditionMode: 4
-    m_ConditionEvent: Turn
-    m_EventTreshold: -0.01
-  - m_ConditionMode: 3
-    m_ConditionEvent: Forward
-    m_EventTreshold: 0.01
   - m_ConditionMode: 4
     m_ConditionEvent: Forward
-    m_EventTreshold: -0.01
+    m_EventTreshold: 0.01
   - m_ConditionMode: 1
     m_ConditionEvent: Jump
     m_EventTreshold: 0
@@ -3727,15 +3718,6 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 3
-    m_ConditionEvent: Turn
-    m_EventTreshold: -0.01
-  - m_ConditionMode: 4
-    m_ConditionEvent: Turn
-    m_EventTreshold: 0.01
-  - m_ConditionMode: 3
-    m_ConditionEvent: Forward
-    m_EventTreshold: -0.01
-  - m_ConditionMode: 4
     m_ConditionEvent: Forward
     m_EventTreshold: 0.01
   - m_ConditionMode: 1

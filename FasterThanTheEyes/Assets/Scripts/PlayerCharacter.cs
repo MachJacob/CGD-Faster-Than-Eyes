@@ -66,22 +66,22 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			// control and velocity handling is different when grounded and airborne:
 			if (m_IsGrounded)
 			{
-				HandleGroundedMovement(_crouch, _jump);
                 m_AttackOne = _attackOne;
                 m_AttackTwo = _attackTwo;
                 m_Block = _block;
                 m_Run = _run;
                 m_oneEighty = _oneEighty;
+				HandleGroundedMovement(_crouch, _jump);
 
             }
 			else
-			{
-				HandleAirborneMovement();
-                m_AttackOne = false;
-                m_AttackTwo = false;
-                m_Block = false;
-                m_Run = false;
-                m_oneEighty = false;
+            {
+                m_AttackOne = _attackOne;
+                m_AttackTwo = _attackTwo;
+                m_Block = _block;
+                m_Run = _run;
+                m_oneEighty = _oneEighty;
+                HandleAirborneMovement();
             }
 
 			ScaleCapsuleForCrouching(_crouch);
@@ -142,10 +142,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             m_Animator.SetBool("Block", m_Block);
             m_Animator.SetBool("180", m_oneEighty);
             m_Animator.SetBool("OnGround", m_IsGrounded);
-            if (!m_IsGrounded)
-			{
-				m_Animator.SetFloat("Jump", m_Rigidbody.velocity.y);
-			}
+            m_Animator.SetBool("Jump", m_Jump);
 
 			// calculate which leg is behind, so as to leave that leg trailing in the jump animation
 			// (This code is reliant on the specific run cycle offset in our animations,
@@ -186,12 +183,13 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		void HandleGroundedMovement(bool crouch, bool jump)
 		{
 			// check whether conditions are right to allow a jump:
-			if (jump && !crouch && m_Animator.GetCurrentAnimatorStateInfo(0).IsName("Grounded"))
+			if (jump && !crouch && m_Animator.GetCurrentAnimatorStateInfo(0).IsName("OnGround"))
 			{
 				// jump!
 				m_Rigidbody.velocity = new Vector3(m_Rigidbody.velocity.x, m_JumpPower, m_Rigidbody.velocity.z);
 				m_IsGrounded = false;
-				m_Animator.applyRootMotion = false;
+                m_Jump = true;
+                m_Animator.applyRootMotion = false;
 				m_GroundCheckDistance = 0.1f;
 			}
 		}
@@ -236,9 +234,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			}
 			else
 			{
-				m_IsGrounded = false;
+				m_IsGrounded = true;
 				m_GroundNormal = Vector3.up;
-				m_Animator.applyRootMotion = false;
+				m_Animator.applyRootMotion = true;
 			}
 		}
 	}

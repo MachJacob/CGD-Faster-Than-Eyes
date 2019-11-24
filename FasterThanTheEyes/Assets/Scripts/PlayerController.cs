@@ -33,14 +33,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         }
 
 
-        private void Update()
-        {
-            if (!m_Jump)
-            {
-                m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
-            }
-        }
-
+       
 
         // Fixed update is called in sync with physics
         private void FixedUpdate()
@@ -48,12 +41,13 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             // read inputs
             float h = CrossPlatformInputManager.GetAxis("Horizontal");
             float v = CrossPlatformInputManager.GetAxis("Vertical");
-            bool crouch = CrossPlatformInputManager.GetButtonDown("Crouch");
-            bool block = CrossPlatformInputManager.GetButtonDown("Block");
+            bool crouch = CrossPlatformInputManager.GetButton("Crouch");
+            bool block = CrossPlatformInputManager.GetButton("Block");
             bool attackOne = CrossPlatformInputManager.GetButtonDown("AttackOne");
             bool attackTwo = CrossPlatformInputManager.GetButtonDown("AttackTwo");
-            bool run = CrossPlatformInputManager.GetButtonDown("Run");
+            bool run = CrossPlatformInputManager.GetButton("Run");
             bool oneEighty = CrossPlatformInputManager.GetButtonDown("OneEighty");
+            m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
 
             // calculate move direction to pass to character
             if (m_Cam != null)
