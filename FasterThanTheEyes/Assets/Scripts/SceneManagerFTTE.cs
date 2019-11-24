@@ -18,13 +18,13 @@ public class SceneManagerFTTE : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
-        mainMenuCanvas.enabled = true;
-        gameOverCanvas.enabled = false;
+        mainMenuCanvas.gameObject.SetActive(true);
+        gameOverCanvas.gameObject.SetActive(false);
         inGameUI.enabled = false;
     }
     public void StartFade()
     {
-        mainMenuCanvas.enabled = false;
+        mainMenuCanvas.gameObject.SetActive(false);
         fade.setFade(1);
     }
     public void ExitGame()
@@ -43,16 +43,15 @@ public class SceneManagerFTTE : MonoBehaviour
         if(gameOver)
         {
 
-            gameOverCanvas.enabled = true;
-            inGameUI.enabled = false;
+            inGameUI.gameObject.SetActive(false);
+            gameOverCanvas.gameObject.SetActive(true);
         }
 
     }
    private void LoadGame()
     {
         GetComponent<CameraSwitcher>().SwitchCams(true);
-        inGameUI.enabled = true;
-        mainMenuCanvas.enabled = false;
+        inGameUI.gameObject.SetActive(true);
         fade.setFade(0);
     }
 
