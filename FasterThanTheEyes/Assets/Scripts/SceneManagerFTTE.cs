@@ -15,6 +15,8 @@ public class SceneManagerFTTE : MonoBehaviour
     private Canvas inGameUI;
     [SerializeField]
     private Fade fade;
+
+    private bool loadComplete = false;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -36,8 +38,8 @@ public class SceneManagerFTTE : MonoBehaviour
     
     void Update()
     {
-        if(fade.loadScene)
-        {
+        if(fade.loadScene && !loadComplete)
+        {          
             LoadGame();
         }
         if(gameOver)
@@ -53,6 +55,8 @@ public class SceneManagerFTTE : MonoBehaviour
         GetComponent<CameraSwitcher>().SwitchCams(true);
         inGameUI.gameObject.SetActive(true);
         fade.setFade(0);
+        loadComplete = true;
+        PlayerScore.playing = true;
     }
 
 }

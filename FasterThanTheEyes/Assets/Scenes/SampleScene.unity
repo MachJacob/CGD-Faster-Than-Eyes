@@ -3436,6 +3436,7 @@ MonoBehaviour:
   spawnLocale4: {fileID: 1749160970}
   SecondsToWait: 55
   counter: 0
+  Random_Number: 0
 --- !u!4 &936094733
 Transform:
   m_ObjectHideFlags: 0
@@ -4751,6 +4752,41 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1200432419}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1216391457 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 149790, guid: ff52dd658e5b84f4499dac36c73fc4a9,
+    type: 3}
+  m_PrefabInstance: {fileID: 74841516}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1216391466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216391457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ced7f8388aa7644988aefd43c7c125b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imgShake: {fileID: 0}
+  hbh: {fileID: 0}
+  health: 0
+--- !u!114 &1216391467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216391457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4711f852a780a440aadd612f8cc9259, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pScore: 100
+  pAmountTaken: 1
 --- !u!4 &1221203333 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,

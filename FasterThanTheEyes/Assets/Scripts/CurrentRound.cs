@@ -8,7 +8,7 @@ public class CurrentRound : MonoBehaviour
     public GameObject Round1Completed;
     public GameObject Round2Completed;
     public GameObject Round3Completed;
-    public Timer RoundTimer;
+    //public Timer RoundTimer;
     //current round
     public int RoundNumber;
 

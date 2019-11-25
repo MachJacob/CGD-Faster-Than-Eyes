@@ -19,7 +19,15 @@ public class PlayerHealth : MonoBehaviour
         health = 100;
     }
 
-   public int GetHealth()
+   //public void Update()
+   //{
+   //    if(Input.GetKeyDown(KeyCode.K))
+   //    {
+   //        DamageHealth(10);
+   //    }
+   //}
+
+    public int GetHealth()
     {
         return health;
     }
@@ -38,5 +46,19 @@ public class PlayerHealth : MonoBehaviour
             imgShake.SetShake(1.0f, 15.0f, 1.0f);
             hbh.UpdateHealthBarHit(amount / 100.0f);
         }
+    }
+
+    public void DamageHealth(int amount)
+    {
+        //
+        // Use DamageHealth function for taking hits from enemies!!!
+        //
+        AdjustHealth(Mathf.Abs(amount) * -1);
+        OnReceiveDamage();
+    }
+
+    public virtual void OnReceiveDamage()
+    {
+        PlayerScore.DecreaseScore();
     }
 }
