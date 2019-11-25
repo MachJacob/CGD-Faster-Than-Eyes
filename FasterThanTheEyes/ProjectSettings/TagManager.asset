@@ -13,6 +13,9 @@ TagManager:
   - Wood
   - Magic
   - Human
+  - Boss
+  - SpellCaster
+  - SwordEnemy
   layers:
   - Default
   - TransparentFX

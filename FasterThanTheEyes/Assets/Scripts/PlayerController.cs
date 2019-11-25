@@ -59,6 +59,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             // pass all parameters to the character control script
             m_Character.Move(m_Move, crouch, m_Jump, block, attackOne, attackTwo, run, oneEighty);
             m_Jump = false;
+
+        }
+        public float GetVelocity()
+        {
+            return m_Move.magnitude;
         }
     }
 }

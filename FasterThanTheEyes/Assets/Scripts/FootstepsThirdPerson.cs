@@ -7,10 +7,38 @@ using UnityStandardAssets.Characters.ThirdPerson;
 // the object tag for a third person character
 public class FootstepsThirdPerson : MonoBehaviour {
 
+    [FMODUnity.EventRef]
+    public string FootstepEvent = "";
+    FMOD.Studio.EventInstance Footstep;
+    FMOD.Studio.PARAMETER_ID materialhParameterId;
+    FMOD.Studio.PARAMETER_ID velocityParameterId;
+    FMOD.Studio.PARAMETER_ID characterTypeParameterId;
     private float distance = 0.1f;
     private float material = 1.0f;
-	// Update is called once per frame
-	void FixedUpdate () {
+    private float characterType = 1.0f;
+
+    private void Awake()
+    {
+        switch (gameObject.tag)
+        {
+            case "Player":
+                characterType = 1.0f;
+                break;
+            case "SwordEnemy":
+                characterType = 2.0f;
+                break;
+            case "SpellCaster":
+                characterType = 3.0f;
+                break;
+            case "Boss":
+                characterType = 4.0f;
+                break;
+            default:
+                characterType = 1.0f;
+                break;
+        }
+    }
+    void FixedUpdate () {
         RaycastHit hit;
         if(Physics.Raycast(GetComponent<Transform>().position, Vector3.down * distance, out hit))
         {
@@ -44,7 +72,16 @@ public class FootstepsThirdPerson : MonoBehaviour {
     // player animation steps(must be set up in each animation used)
     private void PlayStep()
     {
-       
+        float velocity = GetComponent<PlayerController>().GetVelocity();
+        Footstep = FMODUnity.RuntimeManager.CreateInstance(FootstepEvent);
+        Footstep.setParameterByName("VelocityForce", velocity);
+        Footstep.setParameterByName("CharacterType", characterType);
+        Footstep.setParameterByName("Material", material);
+
+        Footstep.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+
+        Footstep.start();
+        Footstep.release();
         // pick & play a random footstep sound from the array,
         // excluding sound at index 0
         //int n = Random.Range(1, TPC.m_FootstepSounds.Length);
