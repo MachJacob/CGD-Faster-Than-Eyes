@@ -39,7 +39,8 @@ public class SceneManagerFTTE : MonoBehaviour
     void Update()
     {
         if(fade.loadScene && !loadComplete)
-        {          
+        {
+            fade.loadScene = false;
             LoadGame();
         }
         if(gameOver)
