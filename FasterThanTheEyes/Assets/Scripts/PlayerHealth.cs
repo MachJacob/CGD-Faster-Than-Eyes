@@ -19,13 +19,18 @@ public class PlayerHealth : MonoBehaviour
         health = 100;
     }
 
-   //public void Update()
-   //{
-   //    if(Input.GetKeyDown(KeyCode.K))
-   //    {
-   //        DamageHealth(10);
-   //    }
-   //}
+    public void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.K))
+        {
+            DamageHealth(10);
+        }
+
+        if(Input.GetKeyUp(KeyCode.J))
+        {
+
+        }
+    }
 
     public int GetHealth()
     {
