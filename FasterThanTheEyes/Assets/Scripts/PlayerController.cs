@@ -38,6 +38,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             bool run = CrossPlatformInputManager.GetButton("Run");
             bool oneEighty = CrossPlatformInputManager.GetButtonDown("OneEighty");
             m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
+            Vector3 lookAt;
 
             // calculate move direction to pass to character
             if (m_Cam != null)
@@ -45,11 +46,30 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 // calculate camera relative direction to move:
                 m_CamForward = Vector3.Scale(m_Cam.forward, new Vector3(1, 0, 1)).normalized;
                 m_Move = v*m_CamForward + h*m_Cam.right;
+
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hit;
+
+                if (Physics.Raycast(ray, out hit))
+                {
+                    Vector3 dir = hit.point - ray.origin;
+                    Debug.DrawRay(ray.origin, dir, Color.red, 0);
+                    //Debug.Log(hit.point);
+                    lookAt = hit.point;
+                }
+                else
+                {
+                    lookAt = Vector3.zero;
+                }
+
+                //lookAt = new Vector3(ray.origin.x, transform.position.y, ray.origin.x);
+                //lookAt -= transform.position;
             }
             else
             {
                 // we use world-relative directions in the case of no main camera
                 m_Move = v*Vector3.forward + h*Vector3.right;
+                lookAt = new Vector3(0, 0, 0);
             }
 #if !MOBILE_INPUT
 			// walk speed multiplier
@@ -57,7 +77,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 #endif
 
             // pass all parameters to the character control script
-            m_Character.Move(m_Move, crouch, m_Jump, block, attackOne, attackTwo, run, oneEighty);
+            m_Character.Move(m_Move, crouch, m_Jump, block, attackOne, attackTwo, run, oneEighty, lookAt);
             m_Jump = false;
         }
     }
