@@ -13,6 +13,7 @@ TagManager:
   - Wood
   - Magic
   - Human
+  - Enemy
   layers:
   - Default
   - TransparentFX
