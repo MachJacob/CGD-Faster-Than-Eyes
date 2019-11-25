@@ -15,7 +15,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         [SerializeField]
         private Camera player_cam;
         
-        private void Start()
+        private void Awake()
         {
             m_Cam = player_cam.transform;
             // get the third person character ( this should never be null due to require component )
