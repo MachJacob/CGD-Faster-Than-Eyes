@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 11402594}
   - component: {fileID: 11450346}
   - component: {fileID: 8958541143263681992}
+  - component: {fileID: -7441997259312177729}
+  - component: {fileID: -1756012409638797280}
   m_Layer: 0
   m_Name: EnemySpellCaster
   m_TagString: SpellCaster
@@ -34,7 +36,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
-  - {fileID: 5326222352054852722}
+  - {fileID: 2512896975355522975}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -154,68 +156,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6fda9e9af216e64fac6683bbe80a2d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1235026384668935472
-GameObject:
+  FootstepEvent: event:/Characters/Footstep
+--- !u!114 &-7441997259312177729
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 7468426902133376133}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2512896975355522975}
-  m_Layer: 0
-  m_Name: Missing Prefab (Dummy)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2512896975355522975
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: b06e61636bc81384f95a0841d79de2d6,
-    type: 3}
-  m_PrefabInstance: {fileID: 7468426902133376133}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1235026384668935472}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 5326222352054852722}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &3980004531094643547
-GameObject:
+  m_GameObject: {fileID: 113348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d84c6da8e0a88df4c84bf5e70940a428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AttackEvent: event:/Characters/Attack
+--- !u!114 &-1756012409638797280
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 7468426902133376133}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5326222352054852722}
-  m_Layer: 0
-  m_Name: Enemy (Missing Prefab)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5326222352054852722
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 7468426902133376133}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3980004531094643547}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2512896975355522975}
-  m_Father: {fileID: 436670}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 113348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b3319c84582fd47857ab9533b8e07e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ArmourSoundEvent: event:/Characters/Armour
 --- !u!1001 &7468426902133376133
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -316,3 +283,9 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: -6057140222963153312, guid: b06e61636bc81384f95a0841d79de2d6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b06e61636bc81384f95a0841d79de2d6, type: 3}
+--- !u!4 &2512896975355522975 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: b06e61636bc81384f95a0841d79de2d6,
+    type: 3}
+  m_PrefabInstance: {fileID: 7468426902133376133}
+  m_PrefabAsset: {fileID: 0}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{3a130eb7-d0d3-40e0-aad0-3f223057db26}">
+		<property name="name">
+			<value>Attack</value>
+		</property>
+		<relationship name="folder">
+			<destination>{0aa6f764-9458-40e5-af9c-93bb1c335399}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{9967505f-38a4-43f4-83c1-ae70cbc3a6be}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{9967505f-38a4-43f4-83c1-ae70cbc3a6be}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

@@ -243,11 +243,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (26)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -323,6 +318,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (26)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!1001 &74841516
@@ -430,6 +430,21 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -3.2
       objectReference: {fileID: 0}
+    - target: {fileID: 562659512517419254, guid: ff52dd658e5b84f4499dac36c73fc4a9,
+        type: 3}
+      propertyPath: imgShake
+      value: 
+      objectReference: {fileID: 592157354}
+    - target: {fileID: 562659512517419254, guid: ff52dd658e5b84f4499dac36c73fc4a9,
+        type: 3}
+      propertyPath: hbh
+      value: 
+      objectReference: {fileID: 592157353}
+    - target: {fileID: 562659512517419254, guid: ff52dd658e5b84f4499dac36c73fc4a9,
+        type: 3}
+      propertyPath: health
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff52dd658e5b84f4499dac36c73fc4a9, type: 3}
 --- !u!1001 &105682468
@@ -439,11 +454,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (41)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -519,6 +529,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (41)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &105682469 stripped
@@ -534,11 +549,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (72)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -614,6 +624,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (72)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &115874579 stripped
@@ -629,11 +644,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (43)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -709,6 +719,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (43)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &142516450 stripped
@@ -730,11 +745,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (71)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -810,6 +820,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (71)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &232333164 stripped
@@ -825,11 +840,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (27)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -905,6 +915,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (27)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!1001 &263147310
@@ -914,11 +929,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (33)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -994,6 +1004,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (33)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!1 &268822467
@@ -1067,11 +1082,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (28)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1147,6 +1157,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (28)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &308877622 stripped
@@ -1162,11 +1177,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (68)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1242,6 +1252,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (68)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &315382974 stripped
@@ -1263,11 +1278,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (64)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1343,6 +1353,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (64)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &367074897 stripped
@@ -1358,11 +1373,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (44)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1438,6 +1448,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (44)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &371486525 stripped
@@ -1528,7 +1543,7 @@ MonoBehaviour:
       motionGridSize: 64
       colorBlindnessType: 0
       colorBlindnessStrength: 1
-  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_Resources: {fileID: 11400000, guid: 00000000000000000000000000000000, type: 0}
   m_ShowToolkit: 0
   m_ShowCustomSorter: 0
   breakBeforeColorGrading: 0
@@ -1635,11 +1650,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (63)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1715,6 +1725,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (63)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &421179733 stripped
@@ -1730,11 +1745,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (35)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1810,6 +1820,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (35)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &428419390 stripped
@@ -1831,11 +1846,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (74)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1911,6 +1921,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (74)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!1001 &463503515
@@ -1920,11 +1935,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (77)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2000,6 +2010,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (77)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &523015814 stripped
@@ -2015,11 +2030,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (37)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2095,6 +2105,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (37)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &585309483 stripped
@@ -2237,6 +2252,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66b34f88c56df8b4bb338d92ee0c5baf, type: 3}
+--- !u!114 &592157353 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5573202762777185348, guid: 66b34f88c56df8b4bb338d92ee0c5baf,
+    type: 3}
+  m_PrefabInstance: {fileID: 592157352}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a9c7df5e02fb4c42a25466888013ebc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &592157354 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2826475065047329586, guid: 66b34f88c56df8b4bb338d92ee0c5baf,
+    type: 3}
+  m_PrefabInstance: {fileID: 592157352}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8404fa376d112b4f83f2750ec40e716, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &605708878
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2244,11 +2283,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (58)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2324,6 +2358,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (58)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &605708879 stripped
@@ -2345,11 +2384,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (36)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2425,6 +2459,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (36)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &645287433 stripped
@@ -2440,11 +2479,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (30)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2520,6 +2554,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (30)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!1 &705507993
@@ -2748,11 +2787,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (61)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2828,6 +2862,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (61)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &763674821 stripped
@@ -2843,11 +2882,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (39)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2923,6 +2957,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (39)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &783010909 stripped
@@ -2938,11 +2977,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (62)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3018,6 +3052,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (62)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &785050283 stripped
@@ -3150,11 +3189,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (53)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3230,6 +3264,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (53)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &918974178 stripped
@@ -3342,7 +3381,7 @@ MonoBehaviour:
       motionGridSize: 64
       colorBlindnessType: 0
       colorBlindnessStrength: 1
-  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_Resources: {fileID: 11400000, guid: 00000000000000000000000000000000, type: 0}
   m_ShowToolkit: 0
   m_ShowCustomSorter: 0
   breakBeforeColorGrading: 0
@@ -3621,7 +3660,7 @@ MonoBehaviour:
       motionGridSize: 64
       colorBlindnessType: 0
       colorBlindnessStrength: 1
-  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_Resources: {fileID: 11400000, guid: 00000000000000000000000000000000, type: 0}
   m_ShowToolkit: 0
   m_ShowCustomSorter: 0
   breakBeforeColorGrading: 0
@@ -3654,11 +3693,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (48)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3734,6 +3768,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (48)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &968725324 stripped
@@ -3749,11 +3788,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (38)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3829,6 +3863,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (38)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &980741594 stripped
@@ -3844,11 +3883,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (23)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3924,6 +3958,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (23)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!1001 &1000468877
@@ -3933,11 +3972,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (56)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4013,6 +4047,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (56)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &1000468878 stripped
@@ -4089,11 +4128,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (51)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4169,6 +4203,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (51)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &1061032501 stripped
@@ -4190,11 +4229,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (29)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4270,6 +4304,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (29)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!1001 &1130308995
@@ -4279,11 +4318,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (55)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4359,6 +4393,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (55)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &1130308996 stripped
@@ -4374,11 +4413,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (5)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4454,6 +4488,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (5)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!1001 &1144924866
@@ -4463,11 +4502,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (60)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4543,6 +4577,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (60)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &1144924867 stripped
@@ -4664,11 +4703,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (46)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4744,6 +4778,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (46)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &1200432420 stripped
@@ -4752,41 +4791,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1200432419}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1216391457 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 149790, guid: ff52dd658e5b84f4499dac36c73fc4a9,
-    type: 3}
-  m_PrefabInstance: {fileID: 74841516}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1216391466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1216391457}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ced7f8388aa7644988aefd43c7c125b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  imgShake: {fileID: 0}
-  hbh: {fileID: 0}
-  health: 0
---- !u!114 &1216391467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1216391457}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4711f852a780a440aadd612f8cc9259, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pScore: 100
-  pAmountTaken: 1
 --- !u!4 &1221203333 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
@@ -4806,11 +4810,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (54)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4886,6 +4885,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (54)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &1278343170 stripped
@@ -4913,11 +4917,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (49)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4993,6 +4992,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (49)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &1338847676 stripped
@@ -5008,11 +5012,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (52)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5088,6 +5087,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (52)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &1342086019 stripped
@@ -5318,11 +5322,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (45)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5398,6 +5397,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (45)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &1415766253 stripped
@@ -5537,11 +5541,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (75)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5617,6 +5616,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (75)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &1474295997 stripped
@@ -5662,11 +5666,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (73)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5742,6 +5741,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (73)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &1579305685 stripped
@@ -5757,11 +5761,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (65)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5837,6 +5836,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (65)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &1589985776 stripped
@@ -5852,11 +5856,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (34)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5932,6 +5931,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (34)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &1616163698 stripped
@@ -5947,11 +5951,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (69)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6027,6 +6026,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (69)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &1630083514 stripped
@@ -6207,11 +6211,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (32)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6287,6 +6286,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (32)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!1001 &1688600338
@@ -6296,11 +6300,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (57)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6376,6 +6375,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (57)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &1688600339 stripped
@@ -6421,11 +6425,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (76)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6501,6 +6500,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (76)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!1001 &1796888397
@@ -6571,11 +6575,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (59)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6651,6 +6650,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (59)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &1822553140 stripped
@@ -6666,11 +6670,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (50)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6746,6 +6745,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (50)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &1826418180 stripped
@@ -6761,11 +6765,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (25)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6841,6 +6840,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (25)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &1861859861 stripped
@@ -6862,11 +6866,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (78)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6942,6 +6941,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (78)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!1001 &1920865729
@@ -6951,11 +6955,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (42)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7031,6 +7030,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (42)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &1920865730 stripped
@@ -7046,11 +7050,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (31)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7126,6 +7125,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (31)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!1001 &1971675156
@@ -7135,11 +7139,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (40)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7215,6 +7214,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (40)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &1971675157 stripped
@@ -7230,11 +7234,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (67)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7310,6 +7309,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (67)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &1979899384 stripped
@@ -7325,11 +7329,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (47)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7405,6 +7404,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (47)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &1987975034 stripped
@@ -7420,11 +7424,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (66)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7500,6 +7499,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (66)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &2021832854 stripped
@@ -7515,11 +7519,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (22)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7595,6 +7594,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (22)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &2040182860 stripped
@@ -7610,11 +7614,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (70)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7690,6 +7689,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (70)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &2052514481 stripped
@@ -7705,11 +7709,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1372223276}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
-        type: 3}
-      propertyPath: m_Name
-      value: Cliff1x1 (24)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7785,6 +7784,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
+    - target: {fileID: -927199367670048503, guid: adb2c43a71585a7488022253179bf26f,
+        type: 3}
+      propertyPath: m_Name
+      value: Cliff1x1 (24)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
 --- !u!4 &2124679055 stripped

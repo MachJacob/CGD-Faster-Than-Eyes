@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 11402594}
   - component: {fileID: 11450346}
   - component: {fileID: 5319068137206336582}
+  - component: {fileID: -8208997789567286234}
+  - component: {fileID: 4653723630991606499}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Boss
@@ -155,6 +157,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FootstepEvent: event:/Characters/Footstep
+--- !u!114 &-8208997789567286234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d84c6da8e0a88df4c84bf5e70940a428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AttackEvent: event:/Characters/Attack
+--- !u!114 &4653723630991606499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b3319c84582fd47857ab9533b8e07e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ArmourSoundEvent: event:/Characters/Armour
 --- !u!1 &4574144093233721856
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,6 +227,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.08, y: 1.6234374, z: 0.1}
   m_Center: {x: -0.000028030434, y: 0.45495552, z: -0.0010211116}
+--- !u!114 &7264600209311053386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8299294175297004463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7733778517f6beb4894024be73acbad7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ImpactEvent: event:/Characters/Impact
 --- !u!1001 &2097369486701900483
 PrefabInstance:
   m_ObjectHideFlags: 0

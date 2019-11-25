@@ -61,9 +61,5 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             m_Jump = false;
 
         }
-        public float GetVelocity()
-        {
-            return m_Move.magnitude;
-        }
     }
 }
