@@ -39,13 +39,13 @@ public class EnemyMovement : MonoBehaviour
 
         if (!coolingdown)
         {
-            StartCoroutine(Attack());
+            Attack();
         }
         else if (attackOver)
         {
-            transform.position = new Vector3((radius * Mathf.Cos(Time.time * speed)) + offset.x,
+            transform.position = Vector3.Lerp(transform.position, new Vector3((radius * Mathf.Cos(Time.time * speed)) + offset.x,
                                 offset.y,
-                                (radius * Mathf.Sin(Time.time * speed)) + offset.z);
+                                (radius * Mathf.Sin(Time.time * speed)) + offset.z), Time.time * 0.01f);
 
             AttackCooldownCounter -= Time.deltaTime;
             if (AttackCooldownCounter <= 0)
@@ -55,23 +55,19 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
-    IEnumerator Attack()
+    private void Attack()
     {
         attackOver = false;
-        if (!playercollided)
-        {
-            transform.position = Vector3.Lerp(transform.position, Player.transform.position, Time.time * 0.01f);
-        }
 
         if (playercollided)
         {
-            transform.position = Vector3.Lerp(transform.position, new Vector3((radius * Mathf.Cos(Time.time * speed)) + offset.x,
-                                offset.y,
-                                (radius * Mathf.Sin(Time.time * speed)) + offset.z), Time.time * 0.01f);
-            yield return new WaitForSeconds(1);
             AttackCooldownCounter = 5.0f;
             coolingdown = true;
             attackOver = true;
+        }
+        else
+        {
+            transform.position = Vector3.Lerp(transform.position, Player.transform.position, Time.time * 0.01f);
         }
     }
     void OnTriggerEnter(Collider other)
