@@ -7,6 +7,8 @@ using UnityStandardAssets.Characters.ThirdPerson;
 // the object tag for a third person character
 public class FootstepsThirdPerson : MonoBehaviour {
 
+    public ParticleSystem dustSystem;
+
     private float distance = 0.1f;
     private float material = 1.0f;
 	// Update is called once per frame

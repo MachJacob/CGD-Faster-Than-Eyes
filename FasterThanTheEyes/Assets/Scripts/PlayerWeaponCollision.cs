@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PlayerWeaponCollision : MonoBehaviour
 {
+    public ParticleSystem bloodSystem;
+    public ParticleSystem sparkSystem;
+    private ParticleSystem systemInstance;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,11 +23,15 @@ public class PlayerWeaponCollision : MonoBehaviour
                 //Play the Hit Sound
                 //Deal Damage
                 StartCoroutine(HitTimer());
+                systemInstance = Instantiate(bloodSystem, collision.gameObject.transform.position, collision.gameObject.transform.rotation, collision.gameObject.transform);
+                systemInstance.Play();
                 //Increase pScore
 
                 break;
             case "Metal" :
                 //play metal hit sounds
+                systemInstance = Instantiate(sparkSystem, collision.gameObject.transform.position, collision.gameObject.transform.rotation, collision.gameObject.transform);
+                systemInstance.Play();
                 break;
                 
                 //etc....

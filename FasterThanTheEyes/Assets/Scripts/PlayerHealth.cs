@@ -13,6 +13,10 @@ public class PlayerHealth : MonoBehaviour
 
     [SerializeField]
     public int health = 0;
+
+    protected bool hit = true;
+   
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -23,10 +27,22 @@ public class PlayerHealth : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.K))
         {
+            hit = true;
             DamageHealth(10);
+
+            if (hit)
+            {
+         
+                GetComponent<ParticleUI>().SetParticles();
+            }
+
+            else if (!hit)
+            {
+                GetComponent<ParticleUI>().RemoveParticles();
+            }
         }
 
-        if(Input.GetKeyUp(KeyCode.J))
+        if (Input.GetKeyUp(KeyCode.J))
         {
 
         }
@@ -60,6 +76,7 @@ public class PlayerHealth : MonoBehaviour
         //
         AdjustHealth(Mathf.Abs(amount) * -1);
         OnReceiveDamage();
+        
     }
 
     public virtual void OnReceiveDamage()
