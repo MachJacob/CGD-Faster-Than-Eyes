@@ -6,6 +6,7 @@ public class EnemyCaster : MonoBehaviour
 {
     public GameObject Player;
     public GameObject projectile;
+    private Transform targetStart, target;
     public Animator anim;
     public float range = 10.0f;
     public float moveSpeed = 2.0f;
@@ -14,11 +15,14 @@ public class EnemyCaster : MonoBehaviour
     private bool coolingdown = true;
     private bool attackOver;
     bool played = true;
+    bool spawned = false;
 
     private Vector3 spawnPosition;
 
     void Start()
     {
+        target = gameObject.transform.Find("Target");
+        targetStart = gameObject.transform.Find("TargetStart");
         attackOver = true;
         spawnPosition = new Vector3(Random.insideUnitSphere.x * (Player.transform.position.x + range),
          Player.transform.position.y, Random.insideUnitSphere.z * (Player.transform.position.z + range));
@@ -37,22 +41,29 @@ public class EnemyCaster : MonoBehaviour
 
         if (!coolingdown)
         {
+            Debug.Log("Starting attack routine");
             StartCoroutine(Attack());
+            spawned = false;
             //Attack has ended
         }
-
-        AttackCooldownCounter -= Time.deltaTime;
-        if (AttackCooldownCounter <= 0)
+        else if (attackOver)
         {
-            coolingdown = false;
+            AttackCooldownCounter -= Time.deltaTime;
+            if (AttackCooldownCounter <= 0)
+            {
+                coolingdown = false;
+            }
         }
 
     }
     private IEnumerator Attack()
     {
+        coolingdown = true;
+        attackOver = false;
         bool stepone = true;
         bool steptwo = false;
         bool stepthree = false;
+        Debug.Log("Bools:" + stepone + steptwo + stepthree);
         if (stepone)
         {
             //do step 1 animation - start cast
@@ -75,20 +86,37 @@ public class EnemyCaster : MonoBehaviour
         if (steptwo)
         {
             //do step 2 animation - raise rock
+            if (steptwo && !spawned)
+            {
+                Instantiate(projectile, targetStart.position, Quaternion.identity, this.gameObject.transform);
+                spawned = true;
+            }
 
+            if (anim.GetCurrentAnimatorStateInfo(0).IsName("RaiseObject"))
+            {
+                //curr_proj.transform.position = Vector3.Lerp(curr_proj.transform.position, target.position, Time.deltaTime * moveSpeed);
+                //curr_proj.transform.rotation = Random.rotation;
+            }
+            //apply glow to stone
             //play anim sound HERE
             yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length
                 + anim.GetCurrentAnimatorStateInfo(0).normalizedTime);
+            Debug.Log("RaiseRock Finished");
+
+            //curr_proj.transform.position = Vector3.Lerp(curr_proj.transform.position, Player.transform.position, Time.deltaTime * 5);
 
             stepthree = true;
             steptwo = false;
-
         }
         if (stepthree)
         {
+            yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length
+                 + anim.GetCurrentAnimatorStateInfo(0).normalizedTime);
             played = true;
+            attackOver = true;
             AttackCooldownCounter = 5.0f;
-            coolingdown = stepthree = true;
+            coolingdown = true;
+            stepthree = false;
         }
     }
 }
