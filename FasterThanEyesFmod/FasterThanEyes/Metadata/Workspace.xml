@@ -24,7 +24,6 @@
         </relationship>
         <relationship name="platforms">
             <destination>{c95a0ecb-1299-4ede-862a-93b347f3df12}</destination>
-            <destination>{488d6440-5059-43e0-aadb-1a748c7554dd}</destination>
         </relationship>
     </object>
 </objects>
