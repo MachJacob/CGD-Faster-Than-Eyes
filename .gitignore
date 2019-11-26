@@ -34,3 +34,15 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+FasterThanTheEyes/Assets/EnemyCharacters/Boss/Boss\.fbx
+
+FasterThanTheEyes/Assets/EnemyCharacters/Boss/Boss\.fbx\.meta
+
+FasterThanTheEyes/Assets/EnemyCharacters/NormalEnemy/Enemy\.fbx
+
+FasterThanTheEyes/Assets/EnemyCharacters/NormalEnemy/Enemy\.fbx\.meta
+
+FasterThanTheEyes/Assets/PlayerCharacter/kachujin_g_rosales\.fbx
+
+FasterThanTheEyes/Assets/PlayerCharacter/kachujin_g_rosales\.fbx\.meta

@@ -70,16 +70,20 @@ public class FootstepsThirdPerson : MonoBehaviour {
     // player animation steps(must be set up in each animation used)
     private void PlayStep()
     {
-        float velocity = GetComponent<PlayerCharacter>().GetVelocity();
-        Footstep = FMODUnity.RuntimeManager.CreateInstance(FootstepEvent);
-        Footstep.setParameterByName("Velocity", velocity);
-        Footstep.setParameterByName("CharacterType", characterType);
-        Footstep.setParameterByName("Material", material);
+        if (SceneManagerFTTE.fmodEnable)
+        {
+            float velocity = GetComponent<PlayerCharacter>().GetVelocity();
+            Footstep = FMODUnity.RuntimeManager.CreateInstance(FootstepEvent);
+            Footstep.setParameterByName("Velocity", velocity);
+            Footstep.setParameterByName("CharacterType", characterType);
+            Footstep.setParameterByName("Material", material);
 
-        Footstep.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+            Footstep.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
 
-        Footstep.start();
-        Footstep.release();
+            Footstep.start();
+            Footstep.release();
+        }
+
         // pick & play a random footstep sound from the array,
         // excluding sound at index 0
         //int n = Random.Range(1, TPC.m_FootstepSounds.Length);

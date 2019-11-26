@@ -27,23 +27,30 @@ public class ArmourSoundsScript : MonoBehaviour
                 characterType = 4.0f;
                 break;
         }
-        ArmourSound = FMODUnity.RuntimeManager.CreateInstance(ArmourSoundEvent);
-        ArmourSound.setParameterByName("CharacterType", characterType);
-        ArmourSound.setParameterByName("Velocity", GetComponent<Rigidbody>().velocity.magnitude);
+        if (SceneManagerFTTE.fmodEnable)
+        {
+            ArmourSound = FMODUnity.RuntimeManager.CreateInstance(ArmourSoundEvent);
+            ArmourSound.setParameterByName("CharacterType", characterType);
+            ArmourSound.setParameterByName("Velocity", GetComponent<Rigidbody>().velocity.magnitude);
 
-        ArmourSound.start();
+            ArmourSound.start();
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        ArmourSound.setParameterByName("Velocity", GetComponent<Rigidbody>().velocity.magnitude);
-
-
+        if (SceneManagerFTTE.fmodEnable)
+        {
+            ArmourSound.setParameterByName("Velocity", GetComponent<Rigidbody>().velocity.magnitude);
+        }
     }
 
     private void OnDestroy()
     {
-        ArmourSound.release();
+        if (SceneManagerFTTE.fmodEnable)
+        {
+            ArmourSound.release();
+        }
     }
 }

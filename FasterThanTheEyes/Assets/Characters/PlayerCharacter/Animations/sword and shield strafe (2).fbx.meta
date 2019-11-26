@@ -21,7 +21,8 @@ ModelImporter:
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: Event PlayStep has a time (1.280435) outside the clip's
+      valid range (0.000000..1.250000). It will never be fired
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -48,7 +49,7 @@ ModelImporter:
       hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
-      loopBlendOrientation: 0
+      loopBlendOrientation: 1
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 1

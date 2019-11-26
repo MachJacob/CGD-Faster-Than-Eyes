@@ -36,7 +36,7 @@ public class PlayerScore : MonoBehaviour
 
 
 
-        Debug.Log(playing);
+        //Debug.Log(playing);
     }
 
     public static void DecreaseScore()

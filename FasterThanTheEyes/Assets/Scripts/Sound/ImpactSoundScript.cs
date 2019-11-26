@@ -91,16 +91,19 @@ public class ImpactSoundScript : MonoBehaviour
     // plays a random sound from the array at the set pitch and volume
     private void PlayImpact(float hitVol)
     {
+        if (SceneManagerFTTE.fmodEnable)
+        {
+            Impact = FMODUnity.RuntimeManager.CreateInstance(ImpactEvent);
+            Impact.setParameterByName("Velocity", hitVol);
+            Impact.setParameterByName("Weapon", impactWeapon);
+            Impact.setParameterByName("ObjectHit", impactHit);
 
-        Impact = FMODUnity.RuntimeManager.CreateInstance(ImpactEvent);
-        Impact.setParameterByName("Velocity", hitVol);
-        Impact.setParameterByName("Weapon", impactWeapon);
-        Impact.setParameterByName("ObjectHit", impactHit);
+            Impact.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
 
-        Impact.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+            Impact.start();
+            Impact.release();
+        }
 
-        Impact.start();
-        Impact.release();
 
     }
 }

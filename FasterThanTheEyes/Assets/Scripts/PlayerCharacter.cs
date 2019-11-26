@@ -22,8 +22,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		float m_OrigGroundCheckDistance;
 		const float k_Half = 0.5f;
 		float m_TurnAmount;
-		float m_ForwardAmount;
-		Vector3 m_GroundNormal;
+        float m_ForwardAmount;
+        float m_SideAmount;
+        Vector3 m_GroundNormal;
 		float m_CapsuleHeight;
 		Vector3 m_CapsuleCenter;
 		CapsuleCollider m_Capsule;
@@ -35,6 +36,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         bool m_Run;
         bool m_oneEighty;
 
+        float counter;
+        int attackIndex;
+
         void Start()
 		{
 			m_Animator = GetComponent<Animator>();
@@ -45,10 +49,13 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 			m_Rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
 			m_OrigGroundCheckDistance = m_GroundCheckDistance;
+
+            attackIndex = 0;
+            counter = 0;
 		}
 
 
-		public void Move(Vector3 move, bool _crouch, bool _jump, bool _block, bool _attackOne, bool _attackTwo, bool _run, bool _oneEighty)
+		public void Move(Vector3 move, bool _crouch, bool _jump, bool _block, bool _attackOne, bool _attackTwo, bool _run, bool _oneEighty, Vector3 _lookAt)
 		{
 
 			// convert the world relative moveInput vector into a local-relative
@@ -58,8 +65,16 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			move = transform.InverseTransformDirection(move);
 			CheckGroundStatus();
 			move = Vector3.ProjectOnPlane(move, m_GroundNormal);
-			m_TurnAmount = Mathf.Atan2(move.x, move.z);
+            Vector3 look = Vector3.RotateTowards(transform.forward, _lookAt - transform.position, 2f, 0.0f);
+            look = Vector3.ProjectOnPlane(look, m_GroundNormal);
+            m_TurnAmount = Vector3.Angle(transform.forward, look) * Mathf.Deg2Rad;
+            if (Vector3.Cross(transform.forward, look).y < 0)
+            {
+                m_TurnAmount *= -1;
+            }
+            //Debug.Log(m_TurnAmount);
 			m_ForwardAmount = move.z;
+            m_SideAmount = move.x;
 
 			ApplyExtraTurnRotation();
 
@@ -84,7 +99,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 HandleAirborneMovement();
             }
 
-			ScaleCapsuleForCrouching(_crouch);
+			//ScaleCapsuleForCrouching(_crouch);
 			PreventStandingInLowHeadroom();
 
 			// send input and other state parameters to the animator
@@ -132,45 +147,68 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 
 		void UpdateAnimator(Vector3 move)
-		{
-			// update the animator parameters
-			m_Animator.SetFloat("Forward", m_ForwardAmount, 0.1f, Time.deltaTime);
-			m_Animator.SetFloat("Turn", m_TurnAmount, 0.1f, Time.deltaTime);
-			m_Animator.SetBool("Crouch", m_Crouching);
-			m_Animator.SetBool("AttackOne", m_AttackOne);
-            m_Animator.SetBool("AttackTwo", m_AttackTwo);
+        {
+            // update the animator parameters
+            m_Animator.SetFloat("Forward", m_ForwardAmount, 0.1f, Time.deltaTime);
+            m_Animator.SetFloat("Side", m_SideAmount, 0.1f, Time.deltaTime);
+            //m_Animator.SetFloat("Turn", m_TurnAmount, 0.1f, Time.deltaTime);
+            m_Animator.SetBool("Crouch", m_Crouching);
+            m_Animator.SetBool("Run", m_Run);
+            Attack();
             m_Animator.SetBool("Block", m_Block);
             m_Animator.SetBool("180", m_oneEighty);
             m_Animator.SetBool("OnGround", m_IsGrounded);
             m_Animator.SetBool("Jump", m_Jump);
 
-			// calculate which leg is behind, so as to leave that leg trailing in the jump animation
-			// (This code is reliant on the specific run cycle offset in our animations,
-			// and assumes one leg passes the other at the normalized clip times of 0.0 and 0.5)
-			float runCycle =
-				Mathf.Repeat(
-					m_Animator.GetCurrentAnimatorStateInfo(0).normalizedTime + m_RunCycleLegOffset, 1);
-			float jumpLeg = (runCycle < k_Half ? 1 : -1) * m_ForwardAmount;
-			if (m_IsGrounded)
-			{
-				//m_Animator.SetFloat("JumpLeg", jumpLeg);
-			}
+            // calculate which leg is behind, so as to leave that leg trailing in the jump animation
+            // (This code is reliant on the specific run cycle offset in our animations,
+            // and assumes one leg passes the other at the normalized clip times of 0.0 and 0.5)
+            float runCycle =
+                Mathf.Repeat(
+                    m_Animator.GetCurrentAnimatorStateInfo(0).normalizedTime + m_RunCycleLegOffset, 1);
+            float jumpLeg = (runCycle < k_Half ? 1 : -1) * m_ForwardAmount;
+            if (m_IsGrounded)
+            {
+                //m_Animator.SetFloat("JumpLeg", jumpLeg);
+            }
 
-			// the anim speed multiplier allows the overall speed of walking/running to be tweaked in the inspector,
-			// which affects the movement speed because of the root motion.
-			if (m_IsGrounded && move.magnitude > 0)
-			{
-				m_Animator.speed = m_AnimSpeedMultiplier;
-			}
-			else
-			{
-				// don't use that while airborne
-				m_Animator.speed = 1;
-			}
-		}
+            // the anim speed multiplier allows the overall speed of walking/running to be tweaked in the inspector,
+            // which affects the movement speed because of the root motion.
+            if (m_IsGrounded && move.magnitude > 0)
+            {
+                m_Animator.speed = m_AnimSpeedMultiplier;
+            }
+            else
+            {
+                // don't use that while airborne
+                m_Animator.speed = 1;
+            }
+        }
 
+        private void Attack()
+        {
+            Debug.Log(m_AttackOne);
 
-		void HandleAirborneMovement()
+            m_Animator.SetBool("AttackOne", m_AttackOne);
+            m_Animator.SetInteger("AttackType", attackIndex);
+            if (m_AttackOne)
+            {
+                attackIndex++;
+
+                counter = 1;
+            }
+                             
+            
+            counter -= Time.deltaTime;
+
+            if (counter <= 0)
+            {
+                attackIndex = 0;
+            }
+            m_Animator.SetBool("AttackTwo", m_AttackTwo);
+        }
+
+        void HandleAirborneMovement()
 		{
 			// apply extra gravity from multiplier:
 			Vector3 extraGravityForce = (Physics.gravity * m_GravityMultiplier) - Physics.gravity;
