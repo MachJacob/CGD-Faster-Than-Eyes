@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.01.10.00">
-    <object class="MixerReturn" id="{c6997994-c642-44fb-a066-e85057ed305f}">
+    <object class="MixerReturn" id="{93d758b0-92f4-437d-a360-8302e4aae93a}">
         <property name="overridingInputFormat">
             <value>2</value>
         </property>
@@ -11,23 +11,23 @@
             <value>Reverb</value>
         </property>
         <relationship name="effectChain">
-            <destination>{be83a78c-bdeb-4173-bfbe-6903a04a8f59}</destination>
+            <destination>{af985fed-5976-4c36-a7e2-17c4e0c07c52}</destination>
         </relationship>
         <relationship name="panner">
-            <destination>{cd9328a8-9fd2-4706-8cf9-60b38027860a}</destination>
+            <destination>{25e05958-7ef2-4e70-ba03-382540ad94a3}</destination>
         </relationship>
         <relationship name="output">
             <destination>{038e0296-0816-42b7-9100-4410bf450e19}</destination>
         </relationship>
     </object>
-    <object class="MixerBusEffectChain" id="{be83a78c-bdeb-4173-bfbe-6903a04a8f59}">
+    <object class="MixerBusEffectChain" id="{af985fed-5976-4c36-a7e2-17c4e0c07c52}">
         <relationship name="effects">
-            <destination>{29e57beb-15dd-4789-944e-d77d33b95ae2}</destination>
-            <destination>{8271d4fa-e05c-4172-bbb1-38c101938a5d}</destination>
+            <destination>{a22b305d-82b0-4422-9142-c53c2e8776c4}</destination>
+            <destination>{05bfe7f9-a649-4738-9d4f-69b80c36349a}</destination>
         </relationship>
     </object>
-    <object class="MixerBusPanner" id="{cd9328a8-9fd2-4706-8cf9-60b38027860a}"/>
-    <object class="SFXReverbEffect" id="{29e57beb-15dd-4789-944e-d77d33b95ae2}">
+    <object class="MixerBusPanner" id="{25e05958-7ef2-4e70-ba03-382540ad94a3}"/>
+    <object class="SFXReverbEffect" id="{a22b305d-82b0-4422-9142-c53c2e8776c4}">
         <property name="wetLevel">
             <value>0</value>
         </property>
@@ -35,5 +35,5 @@
             <value>-80</value>
         </property>
     </object>
-    <object class="MixerBusFader" id="{8271d4fa-e05c-4172-bbb1-38c101938a5d}"/>
+    <object class="MixerBusFader" id="{05bfe7f9-a649-4738-9d4f-69b80c36349a}"/>
 </objects>
