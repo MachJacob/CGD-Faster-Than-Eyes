@@ -22,8 +22,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		float m_OrigGroundCheckDistance;
 		const float k_Half = 0.5f;
 		float m_TurnAmount;
-		float m_ForwardAmount;
-		Vector3 m_GroundNormal;
+        float m_ForwardAmount;
+        float m_SideAmount;
+        Vector3 m_GroundNormal;
 		float m_CapsuleHeight;
 		Vector3 m_CapsuleCenter;
 		CapsuleCollider m_Capsule;
@@ -67,6 +68,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             }
             //Debug.Log(m_TurnAmount);
 			m_ForwardAmount = move.z;
+            m_SideAmount = move.x;
 
 			ApplyExtraTurnRotation();
 
@@ -91,7 +93,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 HandleAirborneMovement();
             }
 
-			ScaleCapsuleForCrouching(_crouch);
+			//ScaleCapsuleForCrouching(_crouch);
 			PreventStandingInLowHeadroom();
 
 			// send input and other state parameters to the animator
@@ -142,9 +144,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		{
 			// update the animator parameters
 			m_Animator.SetFloat("Forward", m_ForwardAmount, 0.1f, Time.deltaTime);
-			//m_Animator.SetFloat("Turn", m_TurnAmount, 0.1f, Time.deltaTime);
-			m_Animator.SetBool("Crouch", m_Crouching);
-			m_Animator.SetBool("AttackOne", m_AttackOne);
+            m_Animator.SetFloat("Side", m_SideAmount, 0.1f, Time.deltaTime);
+            //m_Animator.SetFloat("Turn", m_TurnAmount, 0.1f, Time.deltaTime);
+            m_Animator.SetBool("Crouch", m_Crouching);
+            m_Animator.SetBool("Run", m_Run);
+            m_Animator.SetBool("AttackOne", m_AttackOne);
             m_Animator.SetBool("AttackTwo", m_AttackTwo);
             m_Animator.SetBool("Block", m_Block);
             m_Animator.SetBool("180", m_oneEighty);
