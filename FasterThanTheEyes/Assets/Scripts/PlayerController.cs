@@ -39,10 +39,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             // calculate move direction to pass to character
             
                 // calculate camera relative direction to move:
-                m_CamForward = Vector3.Scale(Vector3.forward, new Vector3(1, 0, 1)).normalized;
-                m_Move = v*m_CamForward + h*Vector3.right;
+            m_CamForward = Vector3.Scale(Vector3.forward, new Vector3(1, 0, 1)).normalized;
+            m_Move = v * m_CamForward + h * Vector3.right;
+            m_Move = Quaternion.Euler(transform.rotation.eulerAngles) * m_Move;
 
-                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 RaycastHit hit;
 
                 if (Physics.Raycast(ray, out hit))
@@ -61,7 +62,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 //lookAt -= transform.position;
 #if !MOBILE_INPUT
 			// walk speed multiplier
-	        if (Input.GetKey(KeyCode.LeftShift)) m_Move *= 0.5f;
+	        //if (Input.GetKey(KeyCode.LeftShift)) m_Move *= 0.5f;
 #endif
 
             // pass all parameters to the character control script

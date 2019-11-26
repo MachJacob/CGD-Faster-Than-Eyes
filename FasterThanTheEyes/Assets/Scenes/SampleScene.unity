@@ -479,6 +479,10 @@ PrefabInstance:
       propertyPath: health
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5426510, guid: ff52dd658e5b84f4499dac36c73fc4a9, type: 3}
+      propertyPath: m_Mass
+      value: 100000
+      objectReference: {fileID: 0}
     - target: {fileID: 2689981410159215697, guid: ff52dd658e5b84f4499dac36c73fc4a9,
         type: 3}
       propertyPath: m_Layer
@@ -2841,6 +2845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1838744413}
+  offset: {x: 0, y: 0, z: 0}
 --- !u!4 &682881656
 Transform:
   m_ObjectHideFlags: 0
