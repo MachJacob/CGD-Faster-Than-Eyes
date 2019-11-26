@@ -14,6 +14,9 @@ public class PlayerScore : MonoBehaviour
     [SerializeField]
     public static int hitTaken = 5;
 
+    [SerializeField]
+    public static int hitCombo = 5;
+
     public static bool playing;
 
     // Start is called before the first frame update
@@ -39,6 +42,11 @@ public class PlayerScore : MonoBehaviour
     public static void DecreaseScore()
     {
         playerScore.pScore -= hitTaken;
+    }
+
+    public static void IncreaseScore()
+    {
+        playerScore.pScore += hitCombo;
     }
 
     IEnumerator Ticker()
