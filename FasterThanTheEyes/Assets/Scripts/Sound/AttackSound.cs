@@ -29,13 +29,17 @@ public class AttackSound : MonoBehaviour
     }
     public void PlayAttackSound(float attack)
     {
-        Attack = FMODUnity.RuntimeManager.CreateInstance(AttackEvent);
-        Attack.setParameterByName("CharacterType", characterType);
-        Attack.setParameterByName("Attack", attack);
+        if (SceneManagerFTTE.fmodEnable)
+        {
+            Attack = FMODUnity.RuntimeManager.CreateInstance(AttackEvent);
+            Attack.setParameterByName("CharacterType", characterType);
+            Attack.setParameterByName("Attack", attack);
 
-        Attack.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+            Attack.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
 
-        Attack.start();
-        Attack.release();
+            Attack.start();
+            Attack.release();
+        }
+
     }
 }

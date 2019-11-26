@@ -20,9 +20,13 @@ public class PlayerHealth : MonoBehaviour
     void Awake()
     {
         health = 3.0f;
+        if (SceneManagerFTTE.fmodEnable)
+        {
         Breathing = FMODUnity.RuntimeManager.CreateInstance(BreathingEvent);
         Breathing.setParameterByName("Health", health);
         Breathing.start();
+        }
+
     }
 
     public void Update()
@@ -48,14 +52,18 @@ public class PlayerHealth : MonoBehaviour
     public void AdjustHealth(float amount)
     {
         health += amount;
-        Breathing.setParameterByName("Health", health);
-
-
-        if (health <= 0)
+        if (SceneManagerFTTE.fmodEnable)
         {
-            Breathing.release();
+            Breathing.setParameterByName("Health", health);
 
+
+            if (health <= 0)
+            {
+                Breathing.release();
+
+            }
         }
+
         if (amount < 0.0f)
         {
             imgShake.SetShake(1.0f, 15.0f, 1.0f);

@@ -48,7 +48,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		}
 
 
-		public void Move(Vector3 move, bool _crouch, bool _jump, bool _block, bool _attackOne, bool _attackTwo, bool _run, bool _oneEighty)
+		public void Move(Vector3 move, bool _crouch, bool _jump, bool _block, bool _attackOne, bool _attackTwo, bool _run, bool _oneEighty, Vector3 _lookAt)
 		{
 
 			// convert the world relative moveInput vector into a local-relative
@@ -58,7 +58,14 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			move = transform.InverseTransformDirection(move);
 			CheckGroundStatus();
 			move = Vector3.ProjectOnPlane(move, m_GroundNormal);
-			m_TurnAmount = Mathf.Atan2(move.x, move.z);
+            Vector3 look = Vector3.RotateTowards(transform.forward, _lookAt - transform.position, 2f, 0.0f);
+            look = Vector3.ProjectOnPlane(look, m_GroundNormal);
+            m_TurnAmount = Vector3.Angle(transform.forward, look) * Mathf.Deg2Rad;
+            if (Vector3.Cross(transform.forward, look).y < 0)
+            {
+                m_TurnAmount *= -1;
+            }
+            //Debug.Log(m_TurnAmount);
 			m_ForwardAmount = move.z;
 
 			ApplyExtraTurnRotation();
@@ -135,7 +142,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		{
 			// update the animator parameters
 			m_Animator.SetFloat("Forward", m_ForwardAmount, 0.1f, Time.deltaTime);
-			m_Animator.SetFloat("Turn", m_TurnAmount, 0.1f, Time.deltaTime);
+			//m_Animator.SetFloat("Turn", m_TurnAmount, 0.1f, Time.deltaTime);
 			m_Animator.SetBool("Crouch", m_Crouching);
 			m_Animator.SetBool("AttackOne", m_AttackOne);
             m_Animator.SetBool("AttackTwo", m_AttackTwo);
