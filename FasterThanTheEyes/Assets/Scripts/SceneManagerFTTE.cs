@@ -19,6 +19,7 @@ public class SceneManagerFTTE : MonoBehaviour
     private Fade fade;
     [SerializeField]
     private GameObject player;
+    public static bool fmodEnable;
 
     private float menu = 1.0f;
     private float stage1 = 2.0f;
@@ -34,13 +35,19 @@ public class SceneManagerFTTE : MonoBehaviour
         mainMenuCanvas.gameObject.SetActive(true);
         gameOverCanvas.gameObject.SetActive(false);
         inGameUI.enabled = false;
+        fmodEnable = false;
 
-        Music = FMODUnity.RuntimeManager.CreateInstance(MusicEvent);
-        Music.setParameterByName("PlayerHealth", player.GetComponent<PlayerHealth>().health);
-        Music.setParameterByName("Stage", menu);
-        Music.setParameterByName("NumberEnemies", 0.0f);
-        Music.setParameterByName("MistAmount", 0.0f);
-        Music.start();
+        if (MusicEvent != "")
+        {
+            Music = FMODUnity.RuntimeManager.CreateInstance(MusicEvent);
+            Music.setParameterByName("PlayerHealth", player.GetComponent<PlayerHealth>().health);
+            Music.setParameterByName("Stage", menu);
+            Music.setParameterByName("NumberEnemies", 0.0f);
+            Music.setParameterByName("MistAmount", 0.0f);
+            Music.start();
+            fmodEnable = true;
+        }
+
     }
     public void StartFade()
     {

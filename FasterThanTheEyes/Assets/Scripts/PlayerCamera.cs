@@ -5,10 +5,11 @@ using UnityEngine;
 public class PlayerCamera : MonoBehaviour
 {
     public GameObject player;
+    [SerializeField]
     private Vector3 offset;
-    void Start()
+    void Awake()
     {
-        offset = transform.position - player.transform.position;
+        offset = new Vector3(0.0f, 25f, -20f);
     }
 
     void Update()

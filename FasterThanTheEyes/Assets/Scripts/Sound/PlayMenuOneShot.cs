@@ -19,22 +19,31 @@ public class PlayMenuOneShot : MonoBehaviour
         switch(sound)
         {
             case 1:
+                if (SceneManagerFTTE.fmodEnable)
+                {
+                    ConfirmSound = FMODUnity.RuntimeManager.CreateInstance(ConfirmSoundEvent);
+                    ConfirmSound.start();
+                    ConfirmSound.release();
+                }
 
-                ConfirmSound = FMODUnity.RuntimeManager.CreateInstance(ConfirmSoundEvent);
-                ConfirmSound.start();
-                ConfirmSound.release();
                 break;
             case 2:
+                if (SceneManagerFTTE.fmodEnable)
+                {
+                    EnterSound = FMODUnity.RuntimeManager.CreateInstance(EnterSoundEvent);
+                    EnterSound.start();
+                    EnterSound.release();
+                }
 
-                EnterSound = FMODUnity.RuntimeManager.CreateInstance(EnterSoundEvent);
-                EnterSound.start();
-                EnterSound.release();
                 break;
             case 3:
+                if (SceneManagerFTTE.fmodEnable)
+                {
+                    ExitSound = FMODUnity.RuntimeManager.CreateInstance(ExitSoundEvent);
+                    ExitSound.start();
+                    ExitSound.release();
+                }
 
-                ExitSound = FMODUnity.RuntimeManager.CreateInstance(ExitSoundEvent);
-                ExitSound.start();
-                ExitSound.release();
                 break;
         }
     }
