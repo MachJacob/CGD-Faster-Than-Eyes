@@ -223,8 +223,12 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			}
 		}
 
+        public float GetVelocity()
+        {
+            return m_Rigidbody.velocity.magnitude;
+        }
 
-		void CheckGroundStatus()
+        void CheckGroundStatus()
 		{
 			RaycastHit hitInfo;
 #if UNITY_EDITOR
@@ -245,6 +249,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 				m_GroundNormal = Vector3.up;
 				m_Animator.applyRootMotion = true;
 			}
-		}
-	}
+        }
+
+    }
 }

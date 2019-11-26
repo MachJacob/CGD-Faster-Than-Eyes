@@ -16,9 +16,11 @@ GameObject:
   - component: {fileID: 11402594}
   - component: {fileID: 11450346}
   - component: {fileID: 8958541143263681992}
+  - component: {fileID: -7441997259312177729}
+  - component: {fileID: -1756012409638797280}
   m_Layer: 0
   m_Name: EnemySpellCaster
-  m_TagString: Human
+  m_TagString: SpellCaster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -154,6 +156,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6fda9e9af216e64fac6683bbe80a2d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FootstepEvent: event:/Characters/Footstep
+--- !u!114 &-7441997259312177729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d84c6da8e0a88df4c84bf5e70940a428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AttackEvent: event:/Characters/Attack
+--- !u!114 &-1756012409638797280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b3319c84582fd47857ab9533b8e07e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ArmourSoundEvent: event:/Characters/Armour
 --- !u!1001 &7468426902133376133
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -161,6 +190,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 436670}
     m_Modifications:
+    - target: {fileID: -6057140222963153312, guid: b06e61636bc81384f95a0841d79de2d6,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 8f263cc7c4fd08e4f9f4f9cf4c66d08a, type: 2}
     - target: {fileID: -4216859302048453862, guid: b06e61636bc81384f95a0841d79de2d6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -236,11 +270,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: b06e61636bc81384f95a0841d79de2d6,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 8f263cc7c4fd08e4f9f4f9cf4c66d08a, type: 2}
     - target: {fileID: 7814502684447367421, guid: b06e61636bc81384f95a0841d79de2d6,
         type: 3}
       propertyPath: m_LocalRotation.y

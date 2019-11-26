@@ -16,6 +16,6 @@ public class HealthBarHit : MonoBehaviour
     // Update is called once per frame
     public void UpdateHealthBarHit(float amount)
     {
-        GetComponent<Image>().fillAmount += amount;
+        GetComponent<Image>().fillAmount = amount;
     }
 }

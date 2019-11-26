@@ -2,10 +2,12 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class SceneManagerFTTE : MonoBehaviour
 {
+    [FMODUnity.EventRef]
+    public string MusicEvent;
+    FMOD.Studio.EventInstance Music;
     private bool gameOver = false;
     [SerializeField]
     private Canvas mainMenuCanvas;
@@ -15,12 +17,30 @@ public class SceneManagerFTTE : MonoBehaviour
     private Canvas inGameUI;
     [SerializeField]
     private Fade fade;
-    // Start is called before the first frame update
+    [SerializeField]
+    private GameObject player;
+
+    private float menu = 1.0f;
+    private float stage1 = 2.0f;
+    private float stage2 = 3.0f;
+    private float stage3 = 4.0f;
+    private float bossStage = 5.0f;
+    private float game_Over = 6.0f;
+    private bool loadComplete = false;
+    private bool inGame = false;
+
     private void Awake()
     {
         mainMenuCanvas.gameObject.SetActive(true);
         gameOverCanvas.gameObject.SetActive(false);
         inGameUI.enabled = false;
+
+        Music = FMODUnity.RuntimeManager.CreateInstance(MusicEvent);
+        Music.setParameterByName("PlayerHealth", player.GetComponent<PlayerHealth>().health);
+        Music.setParameterByName("Stage", menu);
+        Music.setParameterByName("NumberEnemies", 0.0f);
+        Music.setParameterByName("MistAmount", 0.0f);
+        Music.start();
     }
     public void StartFade()
     {
@@ -36,15 +56,26 @@ public class SceneManagerFTTE : MonoBehaviour
     
     void Update()
     {
-        if(fade.loadScene)
+        if(fade.loadScene && !loadComplete)
         {
+            fade.loadScene = false;
             LoadGame();
         }
         if(gameOver)
         {
-
+            inGame = false;
+            Music.setParameterByName("Stage", game_Over);
             inGameUI.gameObject.SetActive(false);
             gameOverCanvas.gameObject.SetActive(true);
+        }
+        if(inGame)
+        {
+            
+            Music.setParameterByName("PlayerHealth", player.GetComponent<PlayerHealth>().health);
+            Music.setParameterByName("Stage", menu);
+           // need way of knowing how many enemies currently spawned and how much mist is in the level
+            // Music.setParameterByName("NumberEnemies", 0.0f);
+           // Music.setParameterByName("MistAmount", 0.0f);
         }
 
     }
@@ -53,6 +84,10 @@ public class SceneManagerFTTE : MonoBehaviour
         GetComponent<CameraSwitcher>().SwitchCams(true);
         inGameUI.gameObject.SetActive(true);
         fade.setFade(0);
+        loadComplete = true;
+        PlayerScore.playing = true;
+        Music.setParameterByName("Stage", stage1);
+        inGame = true;
     }
 
 }
