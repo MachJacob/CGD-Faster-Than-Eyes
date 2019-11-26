@@ -36,7 +36,7 @@ public class PlayerScore : MonoBehaviour
 
 
 
-        Debug.Log(playing);
+        //Debug.Log(playing);
     }
 
     public static void DecreaseScore()
@@ -44,9 +44,9 @@ public class PlayerScore : MonoBehaviour
         playerScore.pScore -= hitTaken;
     }
 
-    public static void IncreaseScore()
+    public static void IncreaseScore(int Multi)
     {
-        playerScore.pScore += hitCombo;
+        playerScore.pScore += Multi * hitCombo;
     }
 
     IEnumerator Ticker()
@@ -55,7 +55,7 @@ public class PlayerScore : MonoBehaviour
         {
             yield return new WaitForSeconds(5);
             pScore -= pAmountTaken;
-            Debug.Log(pScore);
+            //Debug.Log(pScore);
         }
 
         if(pScore <= 0)

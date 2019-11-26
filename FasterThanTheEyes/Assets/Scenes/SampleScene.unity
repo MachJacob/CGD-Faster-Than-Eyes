@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 51430498}
   m_Layer: 0
   m_Name: ExampleEnemySpawn1
-  m_TagString: Untagged
+  m_TagString: Human
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -325,6 +325,37 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 46fbd5f621dcc68409ba814692870fe4, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adb2c43a71585a7488022253179bf26f, type: 3}
+--- !u!1 &67090652 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5540358435066015996, guid: ff52dd658e5b84f4499dac36c73fc4a9,
+    type: 3}
+  m_PrefabInstance: {fileID: 74841516}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &67090658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67090652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 705e1d094cf49934d9ff6589f5e047f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &67090659
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67090652}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 16.039532, y: 20.676804, z: 113.16128}
+  m_Center: {x: -6.1272054, y: -0.5968086, z: 0.000007334176}
 --- !u!1001 &74841516
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -429,6 +460,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -3.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5771443931678849850, guid: ff52dd658e5b84f4499dac36c73fc4a9,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff52dd658e5b84f4499dac36c73fc4a9, type: 3}
@@ -4786,7 +4822,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pScore: 100
-  pAmountTaken: 1
 --- !u!4 &1221203333 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: adb2c43a71585a7488022253179bf26f,
