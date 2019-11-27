@@ -50,8 +50,8 @@ public class PlayerWeaponCollision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(HitCounter);
-        Debug.Log(HitTimerReset);
+        //Debug.Log(HitCounter);
+        //Debug.Log(HitTimerReset);
     }
 
 

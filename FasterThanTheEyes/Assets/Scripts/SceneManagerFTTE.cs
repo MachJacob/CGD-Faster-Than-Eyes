@@ -19,6 +19,7 @@ public class SceneManagerFTTE : MonoBehaviour
     private Fade fade;
     [SerializeField]
     private GameObject player;
+    [SerializeField]
     public static bool fmodEnable;
 
     private float menu = 1.0f;

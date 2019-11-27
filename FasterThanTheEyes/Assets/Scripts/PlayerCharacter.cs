@@ -193,7 +193,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             if (m_AttackOne && (m_AttackOne != m_AttackTwo))
             {
                 attackIndex++;
-                Debug.Log(attackIndex);
+                Debug.Log("Attack index: " + attackIndex);
 
                 counter = 1;
             }
