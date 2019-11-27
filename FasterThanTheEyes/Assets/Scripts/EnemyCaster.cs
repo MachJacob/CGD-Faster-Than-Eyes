@@ -25,20 +25,25 @@ public class EnemyCaster : MonoBehaviour
         target = gameObject.transform.Find("Target");
         targetStart = gameObject.transform.Find("TargetStart");
         attackOver = true;
-        spawnPosition = new Vector3(Random.insideUnitSphere.x * (Player.transform.position.x + range),
-         Player.transform.position.y, Random.insideUnitSphere.z * (Player.transform.position.z + range));
+        spawnPosition = new Vector3((Random.insideUnitSphere.x * range) + Player.transform.position.x,
+         transform.position.y, (Random.insideUnitSphere.z * range) + Player.transform.position.z);
     }
 
     // Update is called once per frame
     void Update()
     {
         //move towards a location around the player based on range value
-        transform.position = Vector3.Lerp(transform.position, spawnPosition, Time.deltaTime * moveSpeed);
+        anim.SetFloat("Forward", 1);
+        transform.position = Vector3.Lerp(transform.position,new Vector3(spawnPosition.x, transform.position.y,spawnPosition.z), Time.deltaTime * moveSpeed);
+        if ((transform.position.x <=spawnPosition.x + 1 && transform.position.z <= spawnPosition.z + 1) &&
+            (transform.position.x >= spawnPosition.x - 1 && transform.position.z >= spawnPosition.z - 1))
+        {
+            anim.SetFloat("Forward", 0);
+        }
         //look at player
         transform.LookAt(Player.transform);
 
         //running sound here
-        //running animations here
 
         if (!coolingdown)
         {

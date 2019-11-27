@@ -223,6 +223,7 @@ MonoBehaviour:
   range: 10
   moveSpeed: 2
   AttackCooldownCounter: 5
+  shootrock: 0
 --- !u!95 &921442035456165101
 Animator:
   serializedVersion: 3

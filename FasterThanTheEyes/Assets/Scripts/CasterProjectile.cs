@@ -6,6 +6,7 @@ public class CasterProjectile : MonoBehaviour
 {
     public float moveSpeed = 0.01f;
     private Transform Player;
+    [SerializeField]
     public GameObject target;
     private bool ready = false;
     public EnemyCaster ec;
