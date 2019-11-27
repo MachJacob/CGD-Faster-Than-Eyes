@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -374,11 +374,6 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 149790, guid: ff52dd658e5b84f4499dac36c73fc4a9, type: 3}
-      propertyPath: m_Layer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5540358435066015996, guid: ff52dd658e5b84f4499dac36c73fc4a9,
-        type: 3}
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
@@ -731,6 +726,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5540358435066015996, guid: ff52dd658e5b84f4499dac36c73fc4a9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6371311551825098867, guid: ff52dd658e5b84f4499dac36c73fc4a9,
         type: 3}
       propertyPath: m_Layer
@@ -855,12 +855,12 @@ PrefabInstance:
         type: 3}
       propertyPath: imgShake
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 540392634}
     - target: {fileID: 562659512517419254, guid: ff52dd658e5b84f4499dac36c73fc4a9,
         type: 3}
       propertyPath: hbh
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 335698158}
     - target: {fileID: 562659512517419254, guid: ff52dd658e5b84f4499dac36c73fc4a9,
         type: 3}
       propertyPath: health
@@ -1686,6 +1686,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 315382973}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &335698158 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5573202762777185348, guid: 66b34f88c56df8b4bb338d92ee0c5baf,
+    type: 3}
+  m_PrefabInstance: {fileID: 592157352}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a9c7df5e02fb4c42a25466888013ebc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &348279709 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8675139434965003078, guid: 66b34f88c56df8b4bb338d92ee0c5baf,
@@ -2355,6 +2367,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 463503515}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &540392634 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2826475065047329586, guid: 66b34f88c56df8b4bb338d92ee0c5baf,
+    type: 3}
+  m_PrefabInstance: {fileID: 592157352}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8404fa376d112b4f83f2750ec40e716, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &585309482
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3031,7 +3055,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 5.989e-42, y: 1.05e-43, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 1.174e-42, y: 1.05e-43, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 90
@@ -6464,6 +6488,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 10224934875024522, guid: b30522f9993aea744a0e31682093896a,
+        type: 3}
+      propertyPath: ConfirmSoundEvent
+      value: event:/MenuSounds/confirmation
+      objectReference: {fileID: 0}
+    - target: {fileID: 10224934875024522, guid: b30522f9993aea744a0e31682093896a,
+        type: 3}
+      propertyPath: EnterSoundEvent
+      value: event:/MenuSounds/OnEnter
+      objectReference: {fileID: 0}
+    - target: {fileID: 10224934875024522, guid: b30522f9993aea744a0e31682093896a,
+        type: 3}
+      propertyPath: ExitSoundEvent
+      value: event:/Music/Music
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b30522f9993aea744a0e31682093896a, type: 3}

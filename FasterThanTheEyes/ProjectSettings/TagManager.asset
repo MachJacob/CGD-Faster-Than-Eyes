@@ -18,6 +18,7 @@ TagManager:
   - SwordEnemy
   - Enemy
   - Target
+  - Stone
   layers:
   - Default
   - TransparentFX

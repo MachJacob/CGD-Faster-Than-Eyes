@@ -18,8 +18,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             m_Character = GetComponent<PlayerCharacter>();
         }
 
+        private void Update()
+        {
+            Debug.Log(m_Character.GetVelocity());
+        }
 
-       
 
         // Fixed update is called in sync with physics
         private void FixedUpdate()

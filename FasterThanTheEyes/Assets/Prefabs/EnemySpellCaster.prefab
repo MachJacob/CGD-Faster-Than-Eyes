@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: -7441997259312177729}
   - component: {fileID: -1756012409638797280}
   - component: {fileID: 5395060}
+  - component: {fileID: 473103270460267057}
   m_Layer: 0
   m_Name: EnemySpellCaster
   m_TagString: SpellCaster
@@ -159,7 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6fda9e9af216e64fac6683bbe80a2d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FootstepEvent: 
+  FootstepEvent: event:/Characters/Footstep
 --- !u!114 &-7441997259312177729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,7 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d84c6da8e0a88df4c84bf5e70940a428, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AttackEvent: 
+  AttackEvent: event:/Characters/Attack
 --- !u!114 &-1756012409638797280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,7 +186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78b3319c84582fd47857ab9533b8e07e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ArmourSoundEvent: 
+  ArmourSoundEvent: event:/Characters/Armour
 --- !u!114 &5395060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,6 +207,21 @@ MonoBehaviour:
   moveSpeed: 2
   AttackCooldownCounter: 5
   shootrock: 0
+  rockfired: 0
+  counter: 0
+--- !u!114 &473103270460267057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549b05dbf89ab244aae93550e99b5e95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeathEvent: event:/Characters/Death
 --- !u!1 &1683553732808860924
 GameObject:
   m_ObjectHideFlags: 0

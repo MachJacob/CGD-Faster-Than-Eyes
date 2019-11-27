@@ -21,8 +21,7 @@ ModelImporter:
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
-    animationImportWarnings: Event AnimationEnd has a time (2.716976) outside the
-      clip's valid range (0.000000..2.625000). It will never be fired
+    animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -64,6 +63,14 @@ ModelImporter:
         functionName: AnimationEnd
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: 17acac8c6b1550b43838015c70a3e67f,
+          type: 3}
+        floatParameter: 0
+        intParameter: 1
+        messageOptions: 0
+      - time: 0
+        functionName: PlayAttackSound
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: d84c6da8e0a88df4c84bf5e70940a428,
           type: 3}
         floatParameter: 0
         intParameter: 1
