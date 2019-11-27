@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 763fe62abaa000d4698399f8cb92998b
+guid: e2cc88ae60f8f3f40b341f1b5af5934e
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -11,7 +11,8 @@ TrueTypeFontImporter:
   fontName: Gamer
   fontNames:
   - Gamer
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 763fe62abaa000d4698399f8cb92998b, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1

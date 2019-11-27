@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a1d0e8c223565134ab6a77da3811aa88
+guid: ed70732c418a6ab498e961b8004ae655
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -11,7 +11,8 @@ TrueTypeFontImporter:
   fontName: Press Start
   fontNames:
   - Press Start
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a1d0e8c223565134ab6a77da3811aa88, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
