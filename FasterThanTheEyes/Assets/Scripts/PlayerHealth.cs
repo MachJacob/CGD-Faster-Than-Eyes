@@ -78,6 +78,7 @@ public class PlayerHealth : MonoBehaviour
         //
         AdjustHealth(Mathf.Abs(amount) * -1);
         OnReceiveDamage();
+        
     }
 
     public virtual void OnReceiveDamage()
