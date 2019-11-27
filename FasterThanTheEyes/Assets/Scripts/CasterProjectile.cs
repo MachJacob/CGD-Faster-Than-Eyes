@@ -8,17 +8,19 @@ public class CasterProjectile : MonoBehaviour
     private Transform Player;
     public GameObject target;
     private bool ready = false;
+    public EnemyCaster ec;
     // Start is called before the first frame update
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player").transform;
         target = this.transform.parent.gameObject.transform.GetChild(0).gameObject;
+        ec = this.transform.parent.gameObject.GetComponent<EnemyCaster>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!ready)
+        if (!ready && ec.shootrock)
         {
             transform.position = Vector3.Lerp(transform.position, target.transform.position, Time.deltaTime * moveSpeed);
             transform.rotation = Random.rotation;

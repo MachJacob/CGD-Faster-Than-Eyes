@@ -16,6 +16,7 @@ public class EnemyCaster : MonoBehaviour
     private bool attackOver;
     bool played = true;
     bool spawned = false;
+    public bool shootrock = false;
 
     private Vector3 spawnPosition;
 
@@ -76,6 +77,12 @@ public class EnemyCaster : MonoBehaviour
             }
             //play anim sound HERE
 
+            if (stepone && !spawned)
+            {
+                Instantiate(projectile, targetStart.position, Quaternion.identity, this.gameObject.transform);
+                spawned = true;
+            }
+
             yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length
                 + anim.GetCurrentAnimatorStateInfo(0).normalizedTime);
             Debug.Log("StartCastAnim Finished");
@@ -86,12 +93,7 @@ public class EnemyCaster : MonoBehaviour
         if (steptwo)
         {
             //do step 2 animation - raise rock
-            if (steptwo && !spawned)
-            {
-                Instantiate(projectile, targetStart.position, Quaternion.identity, this.gameObject.transform);
-                spawned = true;
-            }
-
+            shootrock = true;
             if (anim.GetCurrentAnimatorStateInfo(0).IsName("RaiseObject"))
             {
                 //curr_proj.transform.position = Vector3.Lerp(curr_proj.transform.position, target.position, Time.deltaTime * moveSpeed);
@@ -110,6 +112,7 @@ public class EnemyCaster : MonoBehaviour
         }
         if (stepthree)
         {
+            shootrock = false;
             yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length
                  + anim.GetCurrentAnimatorStateInfo(0).normalizedTime);
             played = true;
