@@ -28,8 +28,9 @@ public class CasterProjectile : MonoBehaviour
         }
         else if (ready)
         {
-
             transform.position = Vector3.Lerp(transform.position, Player.position, Time.deltaTime * 5);
+            ec.rockfired = true;
+            ec.counter = 0.0f;
         }
 
     }
