@@ -9,13 +9,16 @@ public class EnemyCaster : MonoBehaviour
     private Transform targetStart, target;
     public Animator anim;
     public float range = 10.0f;
-    public float moveSpeed = 2.0f;
+    public float moveSpeed = 1.0f;
 
     public float AttackCooldownCounter = 5.0f;
     private bool coolingdown = true;
     private bool attackOver;
     bool played = true;
     bool spawned = false;
+    public bool shootrock = false;
+    public bool rockfired = false;
+    public float counter = 0.0f;
 
     private Vector3 spawnPosition;
 
@@ -24,26 +27,64 @@ public class EnemyCaster : MonoBehaviour
         target = gameObject.transform.Find("Target");
         targetStart = gameObject.transform.Find("TargetStart");
         attackOver = true;
-        spawnPosition = new Vector3(Random.insideUnitSphere.x * (Player.transform.position.x + range),
-         Player.transform.position.y, Random.insideUnitSphere.z * (Player.transform.position.z + range));
+        spawnPosition = new Vector3((Random.insideUnitSphere.x * range) + Player.transform.position.x,
+         transform.position.y, (Random.insideUnitSphere.z * range) + Player.transform.position.z);
     }
+    public void AnimationEnd(int attack)
+    {
+        switch(attack)
+        {
+            case 1:
 
+                    Instantiate(projectile, targetStart.position, Quaternion.identity, this.gameObject.transform);
+                break;
+            case 2:
+
+                shootrock = true;
+                break;
+            case 3:
+                shootrock = false;
+                played = true;
+                attackOver = true;
+                AttackCooldownCounter = 5.0f;
+                coolingdown = true;
+                break;
+        }
+    }
     // Update is called once per frame
     void Update()
     {
         //move towards a location around the player based on range value
-        transform.position = Vector3.Lerp(transform.position, spawnPosition, Time.deltaTime * moveSpeed);
+        anim.SetFloat("Forward", 1);
+
+        if (rockfired)
+        {
+            counter += Time.deltaTime;
+            if (counter >= 2.0f)
+            {
+
+                spawnPosition = new Vector3((Random.insideUnitSphere.x * range) + Player.transform.position.x,
+                transform.position.y, (Random.insideUnitSphere.z * range) + Player.transform.position.z);
+                rockfired = false;
+            }
+        }
+
+        transform.position = Vector3.Lerp(transform.position,new Vector3(spawnPosition.x, transform.position.y,spawnPosition.z), Time.deltaTime * moveSpeed);
+        if ((transform.position.x <=spawnPosition.x + 1 && transform.position.z <= spawnPosition.z + 1) &&
+            (transform.position.x >= spawnPosition.x - 1 && transform.position.z >= spawnPosition.z - 1))
+        {
+            anim.SetFloat("Forward", 0);
+        }
         //look at player
         transform.LookAt(Player.transform);
 
         //running sound here
-        //running animations here
 
         if (!coolingdown)
         {
             Debug.Log("Starting attack routine");
-            StartCoroutine(Attack());
             spawned = false;
+            StartCoroutine(Attack());
             //Attack has ended
         }
         else if (attackOver)
@@ -76,6 +117,7 @@ public class EnemyCaster : MonoBehaviour
             }
             //play anim sound HERE
 
+            
             yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length
                 + anim.GetCurrentAnimatorStateInfo(0).normalizedTime);
             Debug.Log("StartCastAnim Finished");
@@ -86,12 +128,7 @@ public class EnemyCaster : MonoBehaviour
         if (steptwo)
         {
             //do step 2 animation - raise rock
-            if (steptwo && !spawned)
-            {
-                Instantiate(projectile, targetStart.position, Quaternion.identity, this.gameObject.transform);
-                spawned = true;
-            }
-
+            
             if (anim.GetCurrentAnimatorStateInfo(0).IsName("RaiseObject"))
             {
                 //curr_proj.transform.position = Vector3.Lerp(curr_proj.transform.position, target.position, Time.deltaTime * moveSpeed);
@@ -110,12 +147,13 @@ public class EnemyCaster : MonoBehaviour
         }
         if (stepthree)
         {
-            yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length
-                 + anim.GetCurrentAnimatorStateInfo(0).normalizedTime);
-            played = true;
-            attackOver = true;
-            AttackCooldownCounter = 5.0f;
-            coolingdown = true;
+            //yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length
+            //     + anim.GetCurrentAnimatorStateInfo(0).normalizedTime);
+            //shootrock = false;
+            //played = true;
+            //attackOver = true;
+            //AttackCooldownCounter = 5.0f;
+            //coolingdown = true;
             stepthree = false;
         }
     }

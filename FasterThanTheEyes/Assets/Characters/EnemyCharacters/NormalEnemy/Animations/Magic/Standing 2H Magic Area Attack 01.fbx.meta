@@ -21,7 +21,8 @@ ModelImporter:
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: Event AnimationEnd has a time (2.716976) outside the
+      clip's valid range (0.000000..2.625000). It will never be fired
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -59,45 +60,13 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.40869564
-        functionName: PlayStep
+      - time: 0.7810344
+        functionName: AnimationEnd
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: a6fda9e9af216e64fac6683bbe80a2d4,
+        objectReferenceParameter: {fileID: 11500000, guid: 17acac8c6b1550b43838015c70a3e67f,
           type: 3}
         floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.773913
-        functionName: PlayStep
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: a6fda9e9af216e64fac6683bbe80a2d4,
-          type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.3754386
-        functionName: PlayStep
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: a6fda9e9af216e64fac6683bbe80a2d4,
-          type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.71578944
-        functionName: PlayStep
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: a6fda9e9af216e64fac6683bbe80a2d4,
-          type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0
-        functionName: PlayAttackSound
-        data: 
-        objectReferenceParameter: {fileID: 11500000, guid: d84c6da8e0a88df4c84bf5e70940a428,
-          type: 3}
-        floatParameter: 1
-        intParameter: 0
+        intParameter: 1
         messageOptions: 0
       transformMask: []
       maskType: 3
