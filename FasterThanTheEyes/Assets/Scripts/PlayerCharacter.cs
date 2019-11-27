@@ -190,12 +190,12 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             //Debug.Log(m_AttackOne);
             m_Animator.SetBool("AttackOne", m_AttackOne);
             m_Animator.SetInteger("AttackType", attackIndex);
-            if (m_AttackOne && (m_AttackOne != m_AttackTwo))
+            if (m_AttackOne && !m_AttackTwo)
             {
                 attackIndex++;
                 Debug.Log("Attack index: " + attackIndex);
 
-                counter = 1;
+                counter = .5f;
             }
 
             m_AttackTwo = m_AttackOne;
