@@ -82,7 +82,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			if (m_IsGrounded)
 			{
                 m_AttackOne = _attackOne;
-                //m_AttackTwo = _attackTwo;
+                m_AttackTwo = _attackTwo;
                 m_Block = _block;
                 m_Run = _run;
                 m_oneEighty = _oneEighty;
@@ -189,13 +189,17 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         {
             //Debug.Log(m_AttackOne);
             m_Animator.SetBool("AttackOne", m_AttackOne);
-            m_Animator.SetInteger("AttackType", attackIndex);
             if (m_AttackOne && !m_AttackTwo)
             {
                 attackIndex++;
+                m_Animator.SetInteger("AttackType", attackIndex);
+                if (attackIndex >= 5)
+                {
+                    attackIndex = 0;
+                }
                 Debug.Log("Attack index: " + attackIndex);
 
-                counter = .5f;
+                counter = .7f;
             }
 
             m_AttackTwo = m_AttackOne;

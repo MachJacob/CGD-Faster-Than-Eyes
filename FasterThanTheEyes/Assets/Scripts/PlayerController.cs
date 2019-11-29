@@ -20,7 +20,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
         private void Update()
         {
-            Debug.Log(m_Character.GetVelocity());
+            //Debug.Log("Velocity: " + m_Character.GetVelocity());
         }
 
 
