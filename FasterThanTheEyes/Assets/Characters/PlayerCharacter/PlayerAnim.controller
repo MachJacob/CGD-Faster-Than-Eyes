@@ -150,6 +150,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 2
     m_ConditionEvent: Block
     m_EventTreshold: 0
+  - m_ConditionMode: 7
+    m_ConditionEvent: AttackType
+    m_EventTreshold: 3
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 2849131368359232007}
   m_Solo: 0
@@ -1516,7 +1519,7 @@ AnimatorStateTransition:
   - m_ConditionMode: 7
     m_ConditionEvent: AttackType
     m_EventTreshold: 2
-  - m_ConditionMode: 3
+  - m_ConditionMode: 7
     m_ConditionEvent: AttackType
     m_EventTreshold: 4
   m_DstStateMachine: {fileID: 0}
