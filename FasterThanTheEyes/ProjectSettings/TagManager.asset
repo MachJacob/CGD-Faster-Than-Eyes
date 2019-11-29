@@ -16,6 +16,9 @@ TagManager:
   - Boss
   - SpellCaster
   - SwordEnemy
+  - Enemy
+  - Target
+  - Stone
   layers:
   - Default
   - TransparentFX

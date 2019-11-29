@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{46616c35-4e1b-45c5-941c-c2e619ecc32d}">
+        <property name="name">
+            <value>MistLevel</value>
+        </property>
+        <relationship name="folder">
+            <destination>{d7f5af11-608b-4381-9351-b06d78e92311}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{8b5060fd-93b0-4d5e-9137-95e3877c224e}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{8b5060fd-93b0-4d5e-9137-95e3877c224e}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>

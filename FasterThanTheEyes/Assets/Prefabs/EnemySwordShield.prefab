@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 2566525486782200174}
   - component: {fileID: 2057370681285967333}
   - component: {fileID: 485731764866037703}
+  - component: {fileID: 6457327473967384843}
   m_Layer: 0
   m_Name: EnemySwordShield
   m_TagString: SwordEnemy
@@ -183,6 +184,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ArmourSoundEvent: event:/Characters/Armour
+--- !u!114 &6457327473967384843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549b05dbf89ab244aae93550e99b5e95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeathEvent: event:/Characters/Death
 --- !u!1 &2218313212758095176
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,21 +275,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 436670}
     m_Modifications:
-    - target: {fileID: -9064325173771588411, guid: b06e61636bc81384f95a0841d79de2d6,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8847647782281173077, guid: b06e61636bc81384f95a0841d79de2d6,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -5420008163957686366, guid: b06e61636bc81384f95a0841d79de2d6,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: b06e61636bc81384f95a0841d79de2d6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -351,20 +350,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: -463995517713469628, guid: b06e61636bc81384f95a0841d79de2d6,
+    - target: {fileID: -5420008163957686366, guid: b06e61636bc81384f95a0841d79de2d6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2946212468447715126, guid: b06e61636bc81384f95a0841d79de2d6,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3373197664844238778, guid: b06e61636bc81384f95a0841d79de2d6,
         type: 3}
       propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -9064325173771588411, guid: b06e61636bc81384f95a0841d79de2d6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8847647782281173077, guid: b06e61636bc81384f95a0841d79de2d6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -463995517713469628, guid: b06e61636bc81384f95a0841d79de2d6,
+        type: 3}
+      propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2946212468447715126, guid: b06e61636bc81384f95a0841d79de2d6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -6057140222963153312, guid: b06e61636bc81384f95a0841d79de2d6, type: 3}
