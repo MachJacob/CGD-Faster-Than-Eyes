@@ -69,7 +69,7 @@ public class EnemyCaster : MonoBehaviour
                 rockfired = false;
             }
         }
-
+        //movement
         transform.position = Vector3.Lerp(transform.position,new Vector3(spawnPosition.x, transform.position.y,spawnPosition.z), Time.deltaTime * moveSpeed);
         if ((transform.position.x <=spawnPosition.x + 1 && transform.position.z <= spawnPosition.z + 1) &&
             (transform.position.x >= spawnPosition.x - 1 && transform.position.z >= spawnPosition.z - 1))
