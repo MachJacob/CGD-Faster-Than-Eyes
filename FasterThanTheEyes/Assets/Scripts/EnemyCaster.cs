@@ -27,8 +27,8 @@ public class EnemyCaster : MonoBehaviour
         target = gameObject.transform.Find("Target");
         targetStart = gameObject.transform.Find("TargetStart");
         attackOver = true;
-        spawnPosition = new Vector3((Random.insideUnitSphere.x * range) + Player.transform.position.x,
-         transform.position.y, (Random.insideUnitSphere.z * range) + Player.transform.position.z);
+        spawnPosition = new Vector3((Random.insideUnitSphere.x * range) + Player.transform.position.x + range,
+         transform.position.y, (Random.insideUnitSphere.z * range) + Player.transform.position.z + range);
     }
     public void AnimationEnd(int attack)
     {
@@ -64,12 +64,12 @@ public class EnemyCaster : MonoBehaviour
             if (counter >= 2.0f)
             {
 
-                spawnPosition = new Vector3((Random.insideUnitSphere.x * range) + Player.transform.position.x,
-                transform.position.y, (Random.insideUnitSphere.z * range) + Player.transform.position.z);
+                spawnPosition = new Vector3((Random.insideUnitSphere.x * range) + Player.transform.position.x + range,
+                transform.position.y, (Random.insideUnitSphere.z * range) + Player.transform.position.z + range);
                 rockfired = false;
             }
         }
-
+        //movement
         transform.position = Vector3.Lerp(transform.position,new Vector3(spawnPosition.x, transform.position.y,spawnPosition.z), Time.deltaTime * moveSpeed);
         if ((transform.position.x <=spawnPosition.x + 1 && transform.position.z <= spawnPosition.z + 1) &&
             (transform.position.x >= spawnPosition.x - 1 && transform.position.z >= spawnPosition.z - 1))

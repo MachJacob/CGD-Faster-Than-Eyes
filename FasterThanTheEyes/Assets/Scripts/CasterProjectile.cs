@@ -7,15 +7,20 @@ public class CasterProjectile : MonoBehaviour
     public float moveSpeed = 0.01f;
     private Transform Player;
     [SerializeField]
+    Rigidbody rb;
     public GameObject target;
     private bool ready = false;
     public EnemyCaster ec;
+    public int movetime = 8;
     Vector3 targetPos;
     // Start is called before the first frame update
     void Start()
     {
+        rb = this.GetComponent<Rigidbody>();
         Player = GameObject.FindGameObjectWithTag("Player").transform;
         target = ec.transform.GetChild(0).gameObject;
+        Invoke("Gravity", 4);
+        Destroy(gameObject, movetime);
     }
 
     // Update is called once per frame
@@ -28,11 +33,15 @@ public class CasterProjectile : MonoBehaviour
         }
         else if (ready)
         {
-            transform.position = Vector3.Lerp(transform.position, targetPos, Time.deltaTime * 5);
+            transform.position = Vector3.Lerp(transform.position, targetPos + new Vector3(-10,0,-10), Time.deltaTime * 2);
             ec.rockfired = true;
             ec.counter = 0.0f;
         }
 
+    }
+    void Gravity()
+    {
+        rb.useGravity = true;
     }
     private void OnTriggerEnter(Collider other)
     {
