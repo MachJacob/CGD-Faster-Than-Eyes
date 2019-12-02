@@ -89,7 +89,7 @@ public class SceneManagerFTTE : MonoBehaviour
     }
    private void LoadGame()
     {
-        GetComponent<CameraSwitcher>().SwitchCams(true);
+        GetComponent<CameraSwitcher>().SwitchCams(true, false);
         inGameUI.gameObject.SetActive(true);
         fade.setFade(0);
         loadComplete = true;
