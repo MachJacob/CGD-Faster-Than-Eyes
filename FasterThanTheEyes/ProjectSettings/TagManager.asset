@@ -19,6 +19,7 @@ TagManager:
   - Enemy
   - Target
   - Stone
+  - FogDestroyer
   layers:
   - Default
   - TransparentFX

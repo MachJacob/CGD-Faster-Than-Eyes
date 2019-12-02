@@ -41,7 +41,7 @@ public class EnemyMovement : MonoBehaviour
     {
         anim.SetFloat("Forward", 1);
         anim.SetFloat("Turn", 1);
-        transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+        transform.position = new Vector3(transform.position.x, Player.transform.position.y, transform.position.z);
         transform.LookAt(Player.transform);
         counter += Time.deltaTime;
         if (counter >= 2.0f)
@@ -133,6 +133,15 @@ public class EnemyMovement : MonoBehaviour
         {
             playercollided = false;
         }
+    }
+    public void Death()
+    {
+        anim.SetBool("Death", true);
+    }
+    public void Hit()
+    {
+        anim.SetBool("Hit", true);
+
     }
 
 }

@@ -19,7 +19,17 @@ public class PlayerWeaponCollision : MonoBehaviour
         var colliderGO = collision.gameObject;
         switch(colliderGO.tag)
         {
-            case "Human" :
+            case "Spellcaster" :
+                //Play the Hit Sound
+                //Deal Damage
+                StartCoroutine(HitTimer());
+                systemInstance = Instantiate(bloodSystem, collision.gameObject.transform.position, collision.gameObject.transform.rotation, collision.gameObject.transform);
+                systemInstance.Play();
+                //Increase pScore
+
+                //colliderGO.GetComponent<EnemyMovement>().Death();
+                break;
+            case "SwordEnemy":
                 //Play the Hit Sound
                 //Deal Damage
                 StartCoroutine(HitTimer());
@@ -28,12 +38,31 @@ public class PlayerWeaponCollision : MonoBehaviour
                 //Increase pScore
 
                 break;
-            case "Metal" :
+            case "Boss":
+                //Play the Hit Sound
+                //Deal Damage
+                StartCoroutine(HitTimer());
+                systemInstance = Instantiate(bloodSystem, collision.gameObject.transform.position, collision.gameObject.transform.rotation, collision.gameObject.transform);
+                systemInstance.Play();
+                //Increase pScore
+
+                break;
+            case "Sword" :
                 //play metal hit sounds
                 systemInstance = Instantiate(sparkSystem, collision.gameObject.transform.position, collision.gameObject.transform.rotation, collision.gameObject.transform);
                 systemInstance.Play();
                 break;
-                
+            case "Shield":
+                //play metal hit sounds
+                systemInstance = Instantiate(sparkSystem, collision.gameObject.transform.position, collision.gameObject.transform.rotation, collision.gameObject.transform);
+                systemInstance.Play();
+                break;
+            case "TwoHandedSword":
+                //play metal hit sounds
+                systemInstance = Instantiate(sparkSystem, collision.gameObject.transform.position, collision.gameObject.transform.rotation, collision.gameObject.transform);
+                systemInstance.Play();
+                break;
+
                 //etc....
         }
           

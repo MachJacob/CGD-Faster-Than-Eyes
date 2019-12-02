@@ -530,7 +530,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2804880650473842636}
   - component: {fileID: 1745862440315022832}
-  - component: {fileID: 8359066951556461585}
   m_Layer: 2
   m_Name: FogDestroyer
   m_TagString: Untagged
@@ -566,18 +565,6 @@ CapsuleCollider:
   m_Height: 500
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8359066951556461585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1447513784166363533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8213f51f1bf9c044cb46de97301052fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1467202792546383078
 GameObject:
   m_ObjectHideFlags: 0
@@ -1897,33 +1884,6 @@ Transform:
   m_Father: {fileID: 6121738780367681860}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &5771443931678849850
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5540358435066015996}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: df515fe1248a5234b8c83771ea2ea776, type: 3}
---- !u!114 &8890989362144706277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5540358435066015996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7733778517f6beb4894024be73acbad7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ImpactEvent: event:/Characters/Impact
 --- !u!1 &5622989207535800302
 GameObject:
   m_ObjectHideFlags: 0
@@ -2865,17 +2825,23 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.0100000035
       objectReference: {fileID: 0}
+    - target: {fileID: 877036802222163613, guid: 4f354ba23c3e35741885729ce4a3a3b3,
+        type: 3}
+      propertyPath: bloodSystem
+      value: 
+      objectReference: {fileID: 5681131173028331744, guid: ed1b92c42f1d4d648b8fe7f325125bdb,
+        type: 3}
+    - target: {fileID: 877036802222163613, guid: 4f354ba23c3e35741885729ce4a3a3b3,
+        type: 3}
+      propertyPath: sparkSystem
+      value: 
+      objectReference: {fileID: 198887356561477810, guid: bad4a586d8c2b4fc1adb20c80b9b13a1,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f354ba23c3e35741885729ce4a3a3b3, type: 3}
 --- !u!4 &5540358435066178780 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 4f354ba23c3e35741885729ce4a3a3b3,
-    type: 3}
-  m_PrefabInstance: {fileID: 5540358435066050140}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &5540358435066015996 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 4f354ba23c3e35741885729ce4a3a3b3,
     type: 3}
   m_PrefabInstance: {fileID: 5540358435066050140}
   m_PrefabAsset: {fileID: 0}
@@ -2886,21 +2852,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4860716342740518556}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 7344d483fadd60841b70f8596416d189,
-        type: 3}
-      propertyPath: m_Name
-      value: Shield04
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 7344d483fadd60841b70f8596416d189,
-        type: 3}
-      propertyPath: m_TagString
-      value: Shield
-      objectReference: {fileID: 0}
-    - target: {fileID: -5178661895559278292, guid: 7344d483fadd60841b70f8596416d189,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 4300000, guid: a4d2d0d6579f5e54aa7be1f0da5b627f, type: 3}
     - target: {fileID: -4216859302048453862, guid: 7344d483fadd60841b70f8596416d189,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2961,11 +2912,26 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 7344d483fadd60841b70f8596416d189,
+        type: 3}
+      propertyPath: m_Name
+      value: Shield04
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 7344d483fadd60841b70f8596416d189,
+        type: 3}
+      propertyPath: m_TagString
+      value: Shield
+      objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 7344d483fadd60841b70f8596416d189,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ff878c551e43cd747864888ff4cf5f5d, type: 2}
+    - target: {fileID: -5178661895559278292, guid: 7344d483fadd60841b70f8596416d189,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4300000, guid: a4d2d0d6579f5e54aa7be1f0da5b627f, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7344d483fadd60841b70f8596416d189, type: 3}
 --- !u!1001 &6229981047723826520
@@ -3050,11 +3016,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerCharacter
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 7dcfe59535b5f6c49aacdb70d2c4305b,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: -1933529881475503721, guid: 7dcfe59535b5f6c49aacdb70d2c4305b,
         type: 3}
       propertyPath: m_RootOrder
@@ -3064,6 +3025,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 7dcfe59535b5f6c49aacdb70d2c4305b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4676408568124400190, guid: 7dcfe59535b5f6c49aacdb70d2c4305b,
         type: 3}

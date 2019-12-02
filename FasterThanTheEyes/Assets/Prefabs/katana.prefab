@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 400000}
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
+  - component: {fileID: 3589802966611224601}
+  - component: {fileID: 3117011843165087443}
+  - component: {fileID: 877036802222163613}
   m_Layer: 0
   m_Name: katana
   m_TagString: Untagged
@@ -78,3 +81,43 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &3589802966611224601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7733778517f6beb4894024be73acbad7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ImpactEvent: event:/Characters/Impact
+--- !u!65 &3117011843165087443
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 90}
+  m_Center: {x: 0.00000029802325, y: 0.0000005960465, z: 9.2}
+--- !u!114 &877036802222163613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 705e1d094cf49934d9ff6589f5e047f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodSystem: {fileID: 0}
+  sparkSystem: {fileID: 0}
