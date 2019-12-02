@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{2644d343-1f94-468d-a803-2c49f96d5a9a}">
+        <property name="assetPath">
+            <value>Impact Assets/Metal - impact - rock dropping on metal pipe - stone slab- brick- or cynder falling on solid metal with good clanking 2.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>0.96362811791383218</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{e53f00c9-e5bf-40ca-b2c0-1c36d8db4bd1}</destination>
+        </relationship>
+    </object>
+</objects>

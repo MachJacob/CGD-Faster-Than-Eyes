@@ -10,9 +10,6 @@ public class PlayMenuOneShot : MonoBehaviour
     [FMODUnity.EventRef]
     public string EnterSoundEvent;
     FMOD.Studio.EventInstance EnterSound;
-    [FMODUnity.EventRef]
-    public string ExitSoundEvent;
-    FMOD.Studio.EventInstance ExitSound;
 
     public void playMenuSound(int sound)
     {
@@ -33,15 +30,6 @@ public class PlayMenuOneShot : MonoBehaviour
                     EnterSound = FMODUnity.RuntimeManager.CreateInstance(EnterSoundEvent);
                     EnterSound.start();
                     EnterSound.release();
-                }
-
-                break;
-            case 3:
-                if (SceneManagerFTTE.fmodEnable)
-                {
-                    ExitSound = FMODUnity.RuntimeManager.CreateInstance(ExitSoundEvent);
-                    ExitSound.start();
-                    ExitSound.release();
                 }
 
                 break;

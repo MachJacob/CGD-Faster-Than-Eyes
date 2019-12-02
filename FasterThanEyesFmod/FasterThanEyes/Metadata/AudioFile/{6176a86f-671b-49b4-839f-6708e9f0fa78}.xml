@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{6176a86f-671b-49b4-839f-6708e9f0fa78}">
+        <property name="assetPath">
+            <value>FasterThanTheEyes_Logic_MWALL_16_48_Footstep_Mud_003.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>0.61093750000000002</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{e53f00c9-e5bf-40ca-b2c0-1c36d8db4bd1}</destination>
+        </relationship>
+    </object>
+</objects>

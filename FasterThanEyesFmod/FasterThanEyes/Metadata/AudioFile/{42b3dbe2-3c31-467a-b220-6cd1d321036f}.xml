@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{42b3dbe2-3c31-467a-b220-6cd1d321036f}">
+        <property name="assetPath">
+            <value>FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Armour Chinks-005.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>1.0630612244897959</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{e53f00c9-e5bf-40ca-b2c0-1c36d8db4bd1}</destination>
+        </relationship>
+    </object>
+</objects>
