@@ -36,7 +36,8 @@ public class EnemyCaster : MonoBehaviour
         {
             case 1:
 
-                    Instantiate(projectile, targetStart.position, Quaternion.identity, this.gameObject.transform);
+                GameObject rock = Instantiate(projectile, targetStart.position, Quaternion.identity);
+                rock.GetComponent<CasterProjectile>().ec = this;
                 break;
             case 2:
 

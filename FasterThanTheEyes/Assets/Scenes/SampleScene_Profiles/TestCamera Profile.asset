@@ -83,7 +83,7 @@ MonoBehaviour:
     value: 1
   rounded:
     overrideState: 1
-    value: 0
+    value: 1
   mask:
     overrideState: 0
     value: {fileID: 0}
@@ -112,10 +112,10 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 0.12
+    value: 0.67
   color:
     overrideState: 1
-    value: {r: 0, g: 0, b: 0, a: 1}
+    value: {r: 0.33693415, g: 0.49056602, b: 0.016197944, a: 1}
   ambientOnly:
     overrideState: 1
     value: 1

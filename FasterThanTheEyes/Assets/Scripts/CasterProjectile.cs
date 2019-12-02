@@ -10,12 +10,12 @@ public class CasterProjectile : MonoBehaviour
     public GameObject target;
     private bool ready = false;
     public EnemyCaster ec;
+    Vector3 targetPos;
     // Start is called before the first frame update
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player").transform;
-        target = this.transform.parent.gameObject.transform.GetChild(0).gameObject;
-        ec = this.transform.parent.gameObject.GetComponent<EnemyCaster>();
+        target = ec.transform.GetChild(0).gameObject;
     }
 
     // Update is called once per frame
@@ -28,7 +28,7 @@ public class CasterProjectile : MonoBehaviour
         }
         else if (ready)
         {
-            transform.position = Vector3.Lerp(transform.position, Player.position, Time.deltaTime * 5);
+            transform.position = Vector3.Lerp(transform.position, targetPos, Time.deltaTime * 5);
             ec.rockfired = true;
             ec.counter = 0.0f;
         }
@@ -48,6 +48,7 @@ public class CasterProjectile : MonoBehaviour
         {
             Debug.Log("Launching");
             ready = true;
+            targetPos = Player.position + (Vector3.up * 5);
         }
     }
 }
