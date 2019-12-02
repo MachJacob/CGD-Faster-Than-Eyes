@@ -16,11 +16,15 @@ public class EnemyMovement : MonoBehaviour
     //object to circle around
     public float AttackCooldownCounter = 5.0f;
 
-    public float counter = 0.0f;
     private float attackcooldownnew = 5.0f;
     private bool coolingdown = true;
     private bool playercollided = false;
     private bool attackOver;
+    private Vector3 target;
+    private bool pause;
+
+    private bool jumpAttack;
+    int idk;
 
     private Vector3 spawnPosition;
 
@@ -37,18 +41,15 @@ public class EnemyMovement : MonoBehaviour
         transform.position.y, (Random.insideUnitSphere.z * radius) + Player.transform.position.z + radius);
     }
 
-    void FixedUpdate()
+    void Update()
     {
-        anim.SetFloat("Forward", 1);
-        anim.SetFloat("Turn", 1);
         transform.position = new Vector3(transform.position.x, Player.transform.position.y, transform.position.z);
-        transform.LookAt(Player.transform);
-        counter += Time.deltaTime;
-        if (counter >= 2.0f)
-        {
 
-            spawnPosition = new Vector3((Random.insideUnitSphere.x * radius) + Player.transform.position.x + radius,
-            transform.position.y, (Random.insideUnitSphere.z * radius) + Player.transform.position.z + radius);
+        if (jumpAttack)
+        {
+            jumpAttack = false;
+            anim.SetBool("Jump", jumpAttack);
+            anim.SetBool("AttackOne", jumpAttack);
         }
 
         if (CentredToObject)
@@ -56,27 +57,52 @@ public class EnemyMovement : MonoBehaviour
             offset = Player.transform.position;
             offset.x = -Player.transform.position.x;
         }
-
         if (!coolingdown)
         {
-            StartCoroutine(Attack());
+            target = Player.transform.position;
+            float dist = Vector3.Distance(Player.transform.position, transform.position);
+            if (dist > 20)
+            {
+                anim.SetBool("Run", true);
+                anim.SetFloat("Turn", 0);
+                transform.LookAt(target);
+            }
+            else
+            {
+                anim.SetBool("Run", false);
+                Attack();
+            }
+
             //Attack has ended
         }
-
-        else if (attackOver)
+        else if (pause)
+        {
+            attackcooldownnew -= Time.deltaTime;
+            if (attackcooldownnew <= (AttackCooldownCounter - 2))
+            {
+                attackcooldownnew = AttackCooldownCounter;
+                pause = false;
+            }
+            anim.SetFloat("Forward", 0);
+            anim.SetFloat("Turn", 0);
+        }
+        else if (attackOver && !pause)
         {
             // anim.SetFloat("Forward", 1.0f);
             //Enemy returns to circular moving pattern HERE
 
+            anim.SetFloat("Forward", 1);
+            anim.SetFloat("Turn", 1);
+            transform.LookAt(Player.transform);
             transform.position = Vector3.Lerp(transform.position, new Vector3((radius * Mathf.Cos(Time.time * speed)) + offset.x,
                                 transform.position.y,
                                 (radius * Mathf.Sin(Time.time * speed)) + offset.z), Time.deltaTime * 1.0f);
 
-            if ((transform.position.x <= spawnPosition.x + 1 && transform.position.z <= spawnPosition.z + 1) &&
-                (transform.position.x >= spawnPosition.x - 1 && transform.position.z >= spawnPosition.z - 1))
-            {
-                anim.SetFloat("Forward", 0);
-            }
+            //if ((transform.position.x <= spawnPosition.x + 1 && transform.position.z <= spawnPosition.z + 1) &&
+            //    (transform.position.x >= spawnPosition.x - 1 && transform.position.z >= spawnPosition.z - 1))
+            //{
+            //    anim.SetFloat("Forward", 0);
+            //}
             //enemy walk animation/ sound
 
             attackcooldownnew -= Time.deltaTime;
@@ -84,55 +110,46 @@ public class EnemyMovement : MonoBehaviour
             {
                 coolingdown = false;
             }
+            idk = 0;
+            return;
+        }
+        else if (anim.GetCurrentAnimatorStateInfo(0).IsName("GroundedRunning") && !anim.GetBool("Run"))
+        {
+            idk++;
+            if (idk >= 5)
+            {
+                coolingdown = false;
+            }
         }
     }
-    private IEnumerator Attack()
+    private void Attack()
     {
         attackOver = false;
+        coolingdown = true;
 
-        if (playercollided)
-        {
-            //Player is hit HERE
-            //player hit sound
-            //player hit animation
-            attackcooldownnew = AttackCooldownCounter;
-            coolingdown = true;
-            attackOver = true;
-        }
-        else
-        {
-            //enemy starts running towards Player HERE
-            //enemy charge animation
-            //enemy charge sound
-            anim.SetBool("Jump", true);
-            anim.SetBool("AttackOne", true);
-            yield return new WaitForEndOfFrame();
-            anim.SetBool("Jump", false);
-            anim.SetBool("AttackOne", false);
-            transform.position = Vector3.Lerp(transform.position, Player.transform.position, Time.deltaTime * 2);
-        }
+        //enemy starts running towards Player HERE
+        //enemy charge animation
+        //enemy charge sound
+        jumpAttack = true;
+        anim.SetBool("Jump", true);
+        anim.SetBool("AttackOne", true);
+        //transform.position = Vector3.Lerp(transform.position, target, Time.deltaTime * 1);
     }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.collider.gameObject.tag == "Player")
-        {
-            playercollided = true;
-            counter = 0.0f;
-        }
 
-        if (collision.collider.gameObject.tag == "Enemy")
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.gameObject.tag == "SwordEnemy")
         {
             //if enemies colllide with each other, adjust their radius
             radius = Random.Range(radius - 5, radius + 5);
         }
     }
 
-    private void OnCollisionExit(Collision collision)
+    public void AttackEnd()
     {
-        if (collision.collider.gameObject.tag == "Player")
-        {
-            playercollided = false;
-        }
+        attackcooldownnew = AttackCooldownCounter;
+        attackOver = true;
+        pause = true;
     }
     public void Death()
     {
