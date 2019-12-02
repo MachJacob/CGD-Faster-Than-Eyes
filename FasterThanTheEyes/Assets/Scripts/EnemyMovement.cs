@@ -28,7 +28,7 @@ public class EnemyMovement : MonoBehaviour
 
     private Vector3 spawnPosition;
 
-    void Start()
+    void Awake()
     {
         attackcooldownnew = AttackCooldownCounter;
         attackOver = true;
@@ -154,11 +154,15 @@ public class EnemyMovement : MonoBehaviour
     public void Death()
     {
         anim.SetBool("Death", true);
+        
     }
     public void Hit()
     {
         anim.SetBool("Hit", true);
 
     }
-
+    public void Destroy()
+    {
+        Destroy(gameObject);
+    }
 }

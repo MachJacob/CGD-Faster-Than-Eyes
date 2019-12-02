@@ -17,7 +17,25 @@ public class EnemyHealth : MonoBehaviour
 
         if (health <= 0)
         {
-            GetComponent<EnemyMovement>().Death();
+            if (GetComponent<EnemyMovement>() != null)
+            {
+                GetComponent<EnemyMovement>().Death();
+            }
+            else if (GetComponent<EnemyCaster>() != null)
+            {
+                GetComponent<EnemyCaster>().Death();
+            }
+        }
+        else
+        {
+            if (GetComponent<EnemyMovement>() != null)
+            {
+                GetComponent<EnemyMovement>().Hit();
+            }
+            else if (GetComponent<EnemyCaster>() != null)
+            {
+                GetComponent<EnemyCaster>().Hit();
+            }
         }
     }
 

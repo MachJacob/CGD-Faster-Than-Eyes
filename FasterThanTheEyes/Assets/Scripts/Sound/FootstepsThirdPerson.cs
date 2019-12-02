@@ -72,7 +72,7 @@ public class FootstepsThirdPerson : MonoBehaviour {
     {
         if (SceneManagerFTTE.fmodEnable)
         {
-            float velocity = GetComponent<PlayerCharacter>().GetVelocity();
+            float velocity = GetComponent<Rigidbody>().velocity.magnitude; 
             Footstep = FMODUnity.RuntimeManager.CreateInstance(FootstepEvent);
             Footstep.setParameterByName("Velocity", velocity);
             Footstep.setParameterByName("CharacterType", characterType);

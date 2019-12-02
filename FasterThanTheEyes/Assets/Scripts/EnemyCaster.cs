@@ -29,6 +29,7 @@ public class EnemyCaster : MonoBehaviour
         attackOver = true;
         spawnPosition = new Vector3((Random.insideUnitSphere.x * range) + Player.transform.position.x + range,
          transform.position.y, (Random.insideUnitSphere.z * range) + Player.transform.position.z + range);
+        
     }
     public void AnimationEnd(int attack)
     {
@@ -157,5 +158,20 @@ public class EnemyCaster : MonoBehaviour
             //coolingdown = true;
             stepthree = false;
         }
+    }
+
+    public void Death()
+    {
+        anim.SetBool("Death", true);
+
+    }
+    public void Hit()
+    {
+        anim.SetBool("Hit", true);
+
+    }
+    public void Destroy()
+    {
+        Destroy(gameObject);
     }
 }

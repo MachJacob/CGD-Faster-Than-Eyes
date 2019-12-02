@@ -94,7 +94,7 @@ public class ImpactSoundScript : MonoBehaviour
         if (SceneManagerFTTE.fmodEnable)
         {
             Impact = FMODUnity.RuntimeManager.CreateInstance(ImpactEvent);
-            Impact.setParameterByName("Velocity", hitVol);
+            Impact.setParameterByName("ImpactVelocity", hitVol);
             Impact.setParameterByName("Weapon", impactWeapon);
             Impact.setParameterByName("ObjectHit", impactHit);
 

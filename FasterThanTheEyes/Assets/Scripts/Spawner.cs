@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject ObjectToSpawn;
-    public GameObject ObjectToSpawn2;
     [SerializeField]
-    public GameObject[] spawnLocale;
+    public GameObject[] ObjectToSpawn;
+    [SerializeField]
+    public Transform[] spawnLocale;
+    [SerializeField]
+    public GameObject player;
 
     protected Transform myTransform;
     public float SecondsToWait = 25;
@@ -28,14 +30,21 @@ public class Spawner : MonoBehaviour
         {
             counter += Time.deltaTime;
         }
-
-        else
+        else if(numSpawned < NumToSpawn)
         {
-            Random_Number = Random.Range(0, spawnLocale.Length);
-            counter = 25.0f;
+            Random_Number = Random.Range(0, spawnLocale.Length -1);
+            counter = 0.0f;
             Vector3 getPos = transform.position;
-
-            Instantiate(Random.Range(0, 1) == 1 ? ObjectToSpawn : ObjectToSpawn2, spawnLocale[Random_Number].transform.position, spawnLocale[Random_Number].transform.rotation);
+            int EnemyType = numSpawned % 2;
+            GameObject Enemy = Instantiate(ObjectToSpawn[EnemyType], spawnLocale[Random_Number].position, spawnLocale[Random_Number].rotation);
+            if (EnemyType == 0)
+            {
+                Enemy.GetComponent<EnemyMovement>().Player = player;
+            }
+            if (EnemyType == 1)
+            {
+                Enemy.GetComponent<EnemyCaster>().Player = player;
+            }
             numSpawned++;
         }
     }

@@ -75,6 +75,14 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
+      - time: 0.9916667
+        functionName: Destroy
+        data: 
+        objectReferenceParameter: {fileID: 5542707038790878754, guid: 76b08371f715cc246bd0c8ca594f2709,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}

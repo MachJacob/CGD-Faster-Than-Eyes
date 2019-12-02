@@ -22,12 +22,13 @@ public class PlayerWeaponCollision : MonoBehaviour
             case "Spellcaster" :
                 //Play the Hit Sound
                 //Deal Damage
+                
                 StartCoroutine(HitTimer());
                 systemInstance = Instantiate(bloodSystem, collision.gameObject.transform.position, collision.gameObject.transform.rotation, collision.gameObject.transform);
                 systemInstance.Play();
                 //Increase pScore
 
-                //colliderGO.GetComponent<EnemyMovement>().Death();
+                colliderGO.GetComponent<EnemyHealth>().Hit();
                 break;
             case "SwordEnemy":
                 //Play the Hit Sound
@@ -35,6 +36,7 @@ public class PlayerWeaponCollision : MonoBehaviour
                 StartCoroutine(HitTimer());
                 systemInstance = Instantiate(bloodSystem, collision.gameObject.transform.position, collision.gameObject.transform.rotation, collision.gameObject.transform);
                 systemInstance.Play();
+                colliderGO.GetComponent<EnemyHealth>().Hit();
                 //Increase pScore
 
                 break;
@@ -44,6 +46,7 @@ public class PlayerWeaponCollision : MonoBehaviour
                 StartCoroutine(HitTimer());
                 systemInstance = Instantiate(bloodSystem, collision.gameObject.transform.position, collision.gameObject.transform.rotation, collision.gameObject.transform);
                 systemInstance.Play();
+                colliderGO.GetComponent<EnemyHealth>().Hit();
                 //Increase pScore
 
                 break;
