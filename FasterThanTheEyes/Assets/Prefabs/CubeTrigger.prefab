@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4184083355255598674}
   - component: {fileID: 4184083355255598673}
   - component: {fileID: 4184083355255598672}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CubeTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 4184083355255598511}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 264.44, y: 25.87, z: 185.84477}
-  m_LocalScale: {x: 10, y: 11.69, z: 2.64}
+  m_LocalScale: {x: 10, y: 12, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
