@@ -6,15 +6,14 @@ public class PlayerCamera : MonoBehaviour
 {
     public GameObject player;
     [SerializeField]
-    private Vector3 offset;
+    private Vector3 offset = new Vector3(0f, 40f, -25f);
     void Awake()
     {
-        offset = new Vector3(0.0f, 25f, -20f);
+        
     }
 
     void Update()
     {
         transform.position = offset + player.transform.position;
-
     }
 }
