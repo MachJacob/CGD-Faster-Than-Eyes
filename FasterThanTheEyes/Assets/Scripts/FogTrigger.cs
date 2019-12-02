@@ -18,7 +18,11 @@ public class FogTrigger : MonoBehaviour
     {
         if (!triggered)
         {
-            //other.GetComponent<CapsuleCollider>().radius = 0.2f;
+
+            if (other.gameObject.tag == "FogDestroyer")
+            {
+                other.GetComponent<CapsuleCollider>().radius = 0.2f;
+            }
         }
     }
 
