@@ -7,9 +7,10 @@ public class FogTrigger : MonoBehaviour
 {
     private bool triggered = false;
 
+    private Spawner mySpawner;
     private void Awake()
     {
-        
+        mySpawner = GetComponent<Spawner>();
     }
 
 
@@ -18,11 +19,12 @@ public class FogTrigger : MonoBehaviour
     {
         if (!triggered)
         {
-
+            triggered = true;
             if (other.gameObject.tag == "FogDestroyer")
             {
                 other.GetComponent<CapsuleCollider>().radius = 0.2f;
             }
+
         }
     }
 
