@@ -9,7 +9,6 @@ public class PlayerCamera : MonoBehaviour
     private Vector3 offset;
     void Awake()
     {
-        offset = new Vector3(0.0f, 25f, -20f);
     }
 
     void Update()
