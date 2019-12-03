@@ -3,7 +3,11 @@ guid: 705e1d094cf49934d9ff6589f5e047f8
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - bloodSystem: {fileID: 5681131173028331744, guid: ed1b92c42f1d4d648b8fe7f325125bdb,
+      type: 3}
+  - sparkSystem: {fileID: 198887356561477810, guid: bad4a586d8c2b4fc1adb20c80b9b13a1,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
