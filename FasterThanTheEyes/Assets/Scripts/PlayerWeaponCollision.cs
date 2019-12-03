@@ -68,7 +68,7 @@ public class PlayerWeaponCollision : MonoBehaviour
 
                 //etc....
         }
-          
+        Debug.Log(colliderGO.GetComponent<EnemyHealth>().GetHealth()); 
     }
 
     private void OnTriggerEnter(Collider collision)

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5681131173028331744}
   - component: {fileID: 5681131173028331745}
   m_Layer: 0
-  m_Name: Blood_PS2
+  m_Name: Blood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -600,7 +600,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 2
+    maxNumParticles: 8
     size3D: 0
     rotation3D: 0
     gravityModifier:

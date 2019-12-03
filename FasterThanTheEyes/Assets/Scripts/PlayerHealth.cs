@@ -15,7 +15,7 @@ public class PlayerHealth : MonoBehaviour
     private HealthBarHit hbh;
 
     [SerializeField]
-    public float health = 3.0f;
+    public float health = 4.0f;
     // Start is called before the first frame update
     void Awake()
     {

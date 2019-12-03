@@ -11,6 +11,14 @@ public class EnemyHealth : MonoBehaviour
     {
         return health;
     }
+
+    private void Update()
+    {
+        if(health == 0)
+        {
+            Destroy(this.gameObject);
+        }
+    }
     public void Hit()
     {
         health--;

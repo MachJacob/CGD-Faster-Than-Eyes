@@ -48,6 +48,8 @@ public class CasterProjectile : MonoBehaviour
         if (other.tag == "Player")
         {
             //reduce Player HP
+            Player.GetComponent<PlayerHealth>().DamageHealth(1);
+            Debug.Log(Player.GetComponent<PlayerHealth>().GetHealth());
             Destroy(this.gameObject);
         }
     }
@@ -55,7 +57,7 @@ public class CasterProjectile : MonoBehaviour
     {
         if (other.tag == "Target")
         {
-            Debug.Log("Launching");
+            //Debug.Log("Launching");
             ready = true;
             targetPos = Player.position + (Vector3.up * 5);
         }
