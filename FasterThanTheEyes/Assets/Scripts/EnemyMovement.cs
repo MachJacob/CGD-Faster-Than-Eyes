@@ -22,6 +22,7 @@ public class EnemyMovement : MonoBehaviour
     private bool attackOver;
     private Vector3 target;
     private bool pause;
+    bool enable;
 
     private bool jumpAttack;
     int idk;
@@ -30,95 +31,94 @@ public class EnemyMovement : MonoBehaviour
 
     void Awake()
     {
+        anim = GetComponent<Animator>();
         attackcooldownnew = AttackCooldownCounter;
         attackOver = true;
-        if (CentredToObject)
-        {
-            offset = Player.transform.position;
-            offset.x = -Player.transform.position.x;
-        }
-        spawnPosition = new Vector3((Random.insideUnitSphere.x * radius) + Player.transform.position.x + radius,
-        transform.position.y, (Random.insideUnitSphere.z * radius) + Player.transform.position.z + radius);
+        enable = false;
     }
 
     void Update()
     {
-        transform.position = new Vector3(transform.position.x, Player.transform.position.y, transform.position.z);
+        if (enable)
+        {
+            transform.position = new Vector3(transform.position.x, Player.transform.position.y, transform.position.z);
 
-        if (jumpAttack)
-        {
-            jumpAttack = false;
-            anim.SetBool("Jump", jumpAttack);
-            anim.SetBool("AttackOne", jumpAttack);
-        }
-
-        if (CentredToObject)
-        {
-            offset = Player.transform.position;
-            offset.x = -Player.transform.position.x;
-        }
-        if (!coolingdown)
-        {
-            target = Player.transform.position;
-            float dist = Vector3.Distance(Player.transform.position, transform.position);
-            if (dist > 20)
+            if (jumpAttack)
             {
-                anim.SetBool("Run", true);
-                anim.SetFloat("Turn", 0);
-                transform.LookAt(target);
-            }
-            else
-            {
-                anim.SetBool("Run", false);
-                Attack();
+                jumpAttack = false;
+                anim.SetBool("Jump", jumpAttack);
+                anim.SetBool("AttackOne", jumpAttack);
             }
 
-            //Attack has ended
-        }
-        else if (pause)
-        {
-            attackcooldownnew -= Time.deltaTime;
-            if (attackcooldownnew <= (AttackCooldownCounter - 2))
-            {
-                attackcooldownnew = AttackCooldownCounter;
-                pause = false;
-            }
-            anim.SetFloat("Forward", 0);
-            anim.SetFloat("Turn", 0);
-        }
-        else if (attackOver && !pause)
-        {
-            // anim.SetFloat("Forward", 1.0f);
-            //Enemy returns to circular moving pattern HERE
-
-            anim.SetFloat("Forward", 1);
-            anim.SetFloat("Turn", 1);
-            transform.LookAt(Player.transform);
-            transform.position = Vector3.Lerp(transform.position, new Vector3((radius * Mathf.Cos(Time.time * speed)) + offset.x,
-                                transform.position.y,
-                                (radius * Mathf.Sin(Time.time * speed)) + offset.z), Time.deltaTime * 1.0f);
-
-            //if ((transform.position.x <= spawnPosition.x + 1 && transform.position.z <= spawnPosition.z + 1) &&
-            //    (transform.position.x >= spawnPosition.x - 1 && transform.position.z >= spawnPosition.z - 1))
+            //if (CentredToObject)
             //{
-            //    anim.SetFloat("Forward", 0);
+            //    offset = Player.transform.position;
+            //    offset.x = -Player.transform.position.x;
             //}
-            //enemy walk animation/ sound
+            if (!coolingdown)
+            {
+                target = Player.transform.position;
+                float dist = Vector3.Distance(Player.transform.position, transform.position);
+                if (dist > 20)
+                {
+                    anim.SetBool("Run", true);
+                    anim.SetFloat("Turn", 0);
+                    transform.LookAt(target);
+                }
+                else
+                {
+                    anim.SetBool("Run", false);
+                    Attack();
+                }
 
-            attackcooldownnew -= Time.deltaTime;
-            if (attackcooldownnew <= 0)
-            {
-                coolingdown = false;
+                //Attack has ended
             }
-            idk = 0;
-            return;
-        }
-        else if (anim.GetCurrentAnimatorStateInfo(0).IsName("GroundedRunning") && !anim.GetBool("Run"))
-        {
-            idk++;
-            if (idk >= 5)
+            else if (pause)
             {
-                coolingdown = false;
+                attackcooldownnew -= Time.deltaTime;
+                if (attackcooldownnew <= (AttackCooldownCounter - 2))
+                {
+                    attackcooldownnew = AttackCooldownCounter;
+                    pause = false;
+                }
+                anim.SetFloat("Forward", 0);
+                anim.SetFloat("Turn", 0);
+            }
+            else if (attackOver && !pause)
+            {
+                // anim.SetFloat("Forward", 1.0f);
+                //Enemy returns to circular moving pattern HERE
+
+                anim.SetFloat("Forward", 1);
+                anim.SetFloat("Turn", 1);
+                transform.LookAt(Player.transform);
+                Vector3 lerpPos = new Vector3((radius * Mathf.Cos(Time.time * speed)),
+                                    transform.position.y,
+                                    (radius * Mathf.Sin(Time.time * speed))) + Player.transform.position;
+                transform.position = Vector3.Lerp(transform.position, lerpPos, Time.deltaTime * 1.0f);
+
+                //if ((transform.position.x <= spawnPosition.x + 1 && transform.position.z <= spawnPosition.z + 1) &&
+                //    (transform.position.x >= spawnPosition.x - 1 && transform.position.z >= spawnPosition.z - 1))
+                //{
+                //    anim.SetFloat("Forward", 0);
+                //}
+                //enemy walk animation/ sound
+
+                attackcooldownnew -= Time.deltaTime;
+                if (attackcooldownnew <= 0)
+                {
+                    coolingdown = false;
+                }
+                idk = 0;
+                return;
+            }
+            else if (anim.GetCurrentAnimatorStateInfo(0).IsName("GroundedRunning") && !anim.GetBool("Run"))
+            {
+                idk++;
+                if (idk >= 5)
+                {
+                    coolingdown = false;
+                }
             }
         }
     }
@@ -164,5 +164,18 @@ public class EnemyMovement : MonoBehaviour
     public void Destroy()
     {
         Destroy(gameObject);
+    }
+
+    public void InitPlayer(GameObject _player)
+    {
+        Player = _player;
+        //if (CentredToObject)
+        //{
+        //    offset = Player.transform.position;
+        //    offset.x = -Player.transform.position.x;
+        //}
+        spawnPosition = new Vector3((Random.insideUnitSphere.x * radius) + Player.transform.position.x + radius,
+        transform.position.y, (Random.insideUnitSphere.z * radius) + Player.transform.position.z + radius);
+        enable = true;
     }
 }
