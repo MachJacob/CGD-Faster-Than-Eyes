@@ -20,6 +20,7 @@ TagManager:
   - Target
   - Stone
   - FogDestroyer
+  - TransitionalCam
   layers:
   - Default
   - TransparentFX

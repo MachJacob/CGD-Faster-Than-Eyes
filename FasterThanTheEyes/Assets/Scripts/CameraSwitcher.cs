@@ -26,7 +26,7 @@ public class CameraSwitcher : MonoBehaviour
             playerCam.enabled = true;
             transitionCam.enabled = false;
         }
-        else if(transitionCamera)
+        else if(transitionCamera && !playerCamera)
         {
             mainMenuCam.enabled = false;
             playerCam.enabled = false;

@@ -23,6 +23,8 @@ public class SceneManagerFTTE : MonoBehaviour
     public static bool fmodEnable;
     [SerializeField]
     private FogTrigger[] fogtriggers;
+    //[SerializeField]
+    //private GameObject tranCam;
 
     public int numEnemiesKilled = 0;
 
@@ -141,6 +143,10 @@ public class SceneManagerFTTE : MonoBehaviour
                 if (!fogtriggers[0].finished)
                 {
                     fogtriggers[0].Finished();
+                    
+                    
+
+
                 }
             }
         }
