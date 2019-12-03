@@ -39,7 +39,7 @@ public class Spawner : MonoBehaviour
             GameObject Enemy = Instantiate(ObjectToSpawn[EnemyType], spawnLocale[Random_Number].position, spawnLocale[Random_Number].rotation, GetComponentInParent<SceneManagerFTTE>().transform);
             if (EnemyType == 0)
             {
-                Enemy.GetComponent<EnemyMovement>().Player = player;
+                Enemy.GetComponent<EnemyMovement>().InitPlayer(player);
             }
             if (EnemyType == 1)
             {
