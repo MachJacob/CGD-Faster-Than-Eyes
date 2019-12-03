@@ -32,6 +32,7 @@ public class PlayerHealth : MonoBehaviour
     public void Update()
     {
 
+        Breathing.setParameterByName("Velocity", GetComponent<Rigidbody>().velocity.magnitude);
         //    if(Input.GetKeyDown(KeyCode.K))
         //    {
         //        DamageHealth(10);
