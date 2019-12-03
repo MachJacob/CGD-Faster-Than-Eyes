@@ -26,7 +26,7 @@ public class SceneManagerFTTE : MonoBehaviour
 
     public int numEnemiesKilled = 0;
 
-    private float menu = 1.0f;
+    private float menu = 2.0f;
     private float stage1 = 2.0f;
     private float stage2 = 3.0f;
     private float stage3 = 4.0f;
@@ -99,7 +99,7 @@ public class SceneManagerFTTE : MonoBehaviour
         fade.setFade(0);
         loadComplete = true;
         PlayerScore.playing = true;
-        Music.setParameterByName("Stage", stage1);
+        Music.setParameterByName("Stage", menu);
         inGame = true;
     }
     private void CheckFogTriggers()
