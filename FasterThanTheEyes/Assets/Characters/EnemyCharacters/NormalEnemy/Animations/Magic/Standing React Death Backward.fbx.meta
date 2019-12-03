@@ -49,7 +49,7 @@ ModelImporter:
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 1
-      loopBlendPositionY: 1
+      loopBlendPositionY: 0
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
       keepOriginalPositionY: 1
@@ -68,9 +68,9 @@ ModelImporter:
         intParameter: 0
         messageOptions: 0
       - time: 0.99583334
-        functionName: Destroy
+        functionName: DestroyCaster
         data: 
-        objectReferenceParameter: {fileID: 5542707038790878754, guid: 76b08371f715cc246bd0c8ca594f2709,
+        objectReferenceParameter: {fileID: 113348, guid: 8fe4b2e7de316034ca36cf41cae4dc89,
           type: 3}
         floatParameter: 0
         intParameter: 0

@@ -19,13 +19,14 @@ public class PlayerWeaponCollision : MonoBehaviour
         var colliderGO = collision.gameObject;
         switch(colliderGO.tag)
         {
-            case "Spellcaster" :
+            case "SpellCaster" :
                 //Play the Hit Sound
                 //Deal Damage
                 
                 StartCoroutine(HitTimer());
                 systemInstance = Instantiate(bloodSystem, collision.gameObject.transform.position, collision.gameObject.transform.rotation, collision.gameObject.transform);
                 systemInstance.Play();
+                Destroy(systemInstance, 5);
                 //Increase pScore
 
                 colliderGO.GetComponent<EnemyHealth>().Hit();
@@ -36,6 +37,7 @@ public class PlayerWeaponCollision : MonoBehaviour
                 StartCoroutine(HitTimer());
                 systemInstance = Instantiate(bloodSystem, collision.gameObject.transform.position, collision.gameObject.transform.rotation, collision.gameObject.transform);
                 systemInstance.Play();
+                Destroy(systemInstance, 5);
                 colliderGO.GetComponent<EnemyHealth>().Hit();
                 //Increase pScore
 
@@ -46,6 +48,7 @@ public class PlayerWeaponCollision : MonoBehaviour
                 StartCoroutine(HitTimer());
                 systemInstance = Instantiate(bloodSystem, collision.gameObject.transform.position, collision.gameObject.transform.rotation, collision.gameObject.transform);
                 systemInstance.Play();
+                Destroy(systemInstance, 5);
                 colliderGO.GetComponent<EnemyHealth>().Hit();
                 //Increase pScore
 
@@ -54,16 +57,19 @@ public class PlayerWeaponCollision : MonoBehaviour
                 //play metal hit sounds
                 systemInstance = Instantiate(sparkSystem, collision.gameObject.transform.position, collision.gameObject.transform.rotation, collision.gameObject.transform);
                 systemInstance.Play();
+                Destroy(systemInstance, 5);
                 break;
             case "Shield":
                 //play metal hit sounds
                 systemInstance = Instantiate(sparkSystem, collision.gameObject.transform.position, collision.gameObject.transform.rotation, collision.gameObject.transform);
                 systemInstance.Play();
+                Destroy(systemInstance, 5);
                 break;
             case "TwoHandedSword":
                 //play metal hit sounds
                 systemInstance = Instantiate(sparkSystem, collision.gameObject.transform.position, collision.gameObject.transform.rotation, collision.gameObject.transform);
                 systemInstance.Play();
+                Destroy(systemInstance, 5);
                 break;
 
                 //etc....
@@ -91,7 +97,6 @@ public class PlayerWeaponCollision : MonoBehaviour
     private int HitCounter = 0;
     IEnumerator HitTimer()
     {
-        
         HitTimerReset = true;
         yield return new WaitForSeconds(2);
         if(HitTimerReset)

@@ -68,9 +68,17 @@ ModelImporter:
         intParameter: 0
         messageOptions: 0
       - time: 0.98125
-        functionName: Destroy
+        functionName: DestroyEnemy
         data: 
         objectReferenceParameter: {fileID: 5604205306901251882, guid: bd0e3dc262b1e394c93893de692057f0,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.98125
+        functionName: DestroyCaster
+        data: 
+        objectReferenceParameter: {fileID: 113348, guid: 8fe4b2e7de316034ca36cf41cae4dc89,
           type: 3}
         floatParameter: 0
         intParameter: 0

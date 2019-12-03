@@ -24,6 +24,7 @@ public class EnemyCaster : MonoBehaviour
 
     void Start()
     {
+        anim = GetComponent<Animator>();
         target = gameObject.transform.Find("Target");
         targetStart = gameObject.transform.Find("TargetStart");
         attackOver = true;
@@ -162,16 +163,20 @@ public class EnemyCaster : MonoBehaviour
 
     public void Death()
     {
-        anim.SetBool("Death", true);
-
+        anim.SetBool("Dead", true);
     }
     public void Hit()
     {
         anim.SetBool("Hit", true);
 
     }
-    public void Destroy()
+    public void DestroyCaster()
     {
         Destroy(gameObject);
+    }
+
+    public void ResetHit()
+    {
+        anim.SetBool("Hit", false);
     }
 }

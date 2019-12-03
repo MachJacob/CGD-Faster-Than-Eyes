@@ -21,7 +21,7 @@ public class EnemyMovement : MonoBehaviour
     private bool playercollided = false;
     private bool attackOver;
     private Vector3 target;
-    private bool pause;
+    private float pause;
     bool enable;
 
     private bool jumpAttack;
@@ -35,6 +35,7 @@ public class EnemyMovement : MonoBehaviour
         attackcooldownnew = AttackCooldownCounter;
         attackOver = true;
         enable = false;
+        pause = 0;
     }
 
     void Update()
@@ -55,7 +56,17 @@ public class EnemyMovement : MonoBehaviour
             //    offset = Player.transform.position;
             //    offset.x = -Player.transform.position.x;
             //}
-            if (!coolingdown)
+            if (pause > 0.0f)
+            {
+                pause -= Time.deltaTime;
+                if (attackcooldownnew <= (AttackCooldownCounter - 2))
+                {
+                    attackcooldownnew = AttackCooldownCounter;
+                }
+                anim.SetFloat("Forward", 0);
+                anim.SetFloat("Turn", 0);
+            }
+            else if(!coolingdown)
             {
                 target = Player.transform.position;
                 float dist = Vector3.Distance(Player.transform.position, transform.position);
@@ -73,18 +84,7 @@ public class EnemyMovement : MonoBehaviour
 
                 //Attack has ended
             }
-            else if (pause)
-            {
-                attackcooldownnew -= Time.deltaTime;
-                if (attackcooldownnew <= (AttackCooldownCounter - 2))
-                {
-                    attackcooldownnew = AttackCooldownCounter;
-                    pause = false;
-                }
-                anim.SetFloat("Forward", 0);
-                anim.SetFloat("Turn", 0);
-            }
-            else if (attackOver && !pause)
+            else if (attackOver && pause <= 0)
             {
                 // anim.SetFloat("Forward", 1.0f);
                 //Enemy returns to circular moving pattern HERE
@@ -149,19 +149,19 @@ public class EnemyMovement : MonoBehaviour
     {
         attackcooldownnew = AttackCooldownCounter;
         attackOver = true;
-        pause = true;
+        pause = 2;
     }
     public void Death()
     {
-        anim.SetBool("Death", true);
-        
+        anim.SetBool("Dead", true);
+        pause = 10;
     }
     public void Hit()
     {
         anim.SetBool("Hit", true);
-
+        pause = 0.5f;
     }
-    public void Destroy()
+    public void DestroyEnemy()
     {
         Destroy(gameObject);
     }

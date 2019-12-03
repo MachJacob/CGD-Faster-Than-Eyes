@@ -15,7 +15,7 @@ public class EnemyHealth : MonoBehaviour
     {
         health--;
 
-        if (health == 0)
+        if (health <= 0)
         {
             GetComponentInParent<SceneManagerFTTE>().numEnemiesKilled++;
             if (GetComponent<EnemyMovement>() != null)
