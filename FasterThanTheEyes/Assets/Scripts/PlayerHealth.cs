@@ -10,16 +10,13 @@ public class PlayerHealth : MonoBehaviour
     public string BreathingEvent;
     FMOD.Studio.EventInstance Breathing;
     [SerializeField]
-    private ImageShake imgShake;
-    [SerializeField]
-    private HealthBarHit hbh;
+    public int health = 3;
 
-    [SerializeField]
-    public float health = 4.0f;
+    [SerializeField] HealthHeartScript hhs;
     // Start is called before the first frame update
     void Awake()
     {
-        health = 3.0f;
+        health = 3;
         if (SceneManagerFTTE.fmodEnable)
         {
         Breathing = FMODUnity.RuntimeManager.CreateInstance(BreathingEvent);
@@ -44,13 +41,13 @@ public class PlayerHealth : MonoBehaviour
         return health;
     }
 
-    public void SetHealth(float amount)
+    public void SetHealth(int amount)
     {
         health = amount;
-        hbh.UpdateHealthBarHit(amount / 100.0f);
+       
     }
 
-    public void AdjustHealth(float amount)
+    public void AdjustHealth(int amount)
     {
         health += amount;
         if (SceneManagerFTTE.fmodEnable)
@@ -65,10 +62,10 @@ public class PlayerHealth : MonoBehaviour
             }
         }
 
-        if (amount < 0.0f)
+        if (amount < 0)
         {
-            imgShake.SetShake(1.0f, 15.0f, 1.0f);
-            hbh.UpdateHealthBarHit(health / 100.0f);
+            
+            
         }
     }
 
