@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 5439092156532935209}
   - component: {fileID: 1466812458315724005}
   - component: {fileID: 5604205307694078035}
+  - component: {fileID: 8263740830727934500}
   m_Layer: 2
   m_Name: BasicEnemy
   m_TagString: SwordEnemy
@@ -182,6 +183,19 @@ MonoBehaviour:
   Player: {fileID: 149790, guid: ff52dd658e5b84f4499dac36c73fc4a9, type: 3}
   anim: {fileID: 5604205306908613792}
   AttackCooldownCounter: 5
+--- !u!114 &8263740830727934500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5604205306901251882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ca3f06bf28c62049a97feea7547f196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 4
 --- !u!1 &5985049802771302566
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     [SerializeField]
-    private int health;
+    private int health = 4;
 
     public int GetHealth()
     {
@@ -15,8 +15,9 @@ public class EnemyHealth : MonoBehaviour
     {
         health--;
 
-        if (health <= 0)
+        if (health == 0)
         {
+            GetComponentInParent<SceneManagerFTTE>().numEnemiesKilled++;
             if (GetComponent<EnemyMovement>() != null)
             {
                 GetComponent<EnemyMovement>().Death();
@@ -25,6 +26,7 @@ public class EnemyHealth : MonoBehaviour
             {
                 GetComponent<EnemyCaster>().Death();
             }
+
         }
         else
         {

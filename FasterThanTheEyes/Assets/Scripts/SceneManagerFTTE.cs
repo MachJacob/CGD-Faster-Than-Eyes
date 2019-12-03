@@ -21,6 +21,10 @@ public class SceneManagerFTTE : MonoBehaviour
     private GameObject player;
     [SerializeField]
     public static bool fmodEnable;
+    [SerializeField]
+    private FogTrigger[] fogtriggers;
+
+    public int numEnemiesKilled = 0;
 
     private float menu = 1.0f;
     private float stage1 = 2.0f;
@@ -81,6 +85,7 @@ public class SceneManagerFTTE : MonoBehaviour
             
             Music.setParameterByName("PlayerHealth", player.GetComponent<PlayerHealth>().health);
             Music.setParameterByName("Stage", menu);
+            CheckFogTriggers();
            // need way of knowing how many enemies currently spawned and how much mist is in the level
             // Music.setParameterByName("NumberEnemies", 0.0f);
            // Music.setParameterByName("MistAmount", 0.0f);
@@ -97,5 +102,47 @@ public class SceneManagerFTTE : MonoBehaviour
         Music.setParameterByName("Stage", stage1);
         inGame = true;
     }
-
+    private void CheckFogTriggers()
+    {
+        if(fogtriggers[3].triggered && fogtriggers[3].mySpawner.numSpawned == fogtriggers[3].mySpawner.NumToSpawn)
+        {
+            if (numEnemiesKilled == fogtriggers[0].mySpawner.NumToSpawn + fogtriggers[1].mySpawner.NumToSpawn + fogtriggers[2].mySpawner.NumToSpawn + fogtriggers[3].mySpawner.NumToSpawn)
+            {
+                if (!fogtriggers[3].finished)
+                {
+                    fogtriggers[3].Finished();
+                }
+            }
+        }
+        else if (fogtriggers[2].triggered && fogtriggers[2].mySpawner.numSpawned == fogtriggers[2].mySpawner.NumToSpawn)
+        {
+            if (numEnemiesKilled == fogtriggers[0].mySpawner.NumToSpawn + fogtriggers[1].mySpawner.NumToSpawn + fogtriggers[2].mySpawner.NumToSpawn)
+            {
+                if (!fogtriggers[2].finished)
+                {
+                    fogtriggers[2].Finished();
+                }
+            }
+        }
+        else if (fogtriggers[1].triggered && fogtriggers[1].mySpawner.numSpawned == fogtriggers[1].mySpawner.NumToSpawn)
+        {
+            if (numEnemiesKilled == fogtriggers[0].mySpawner.NumToSpawn + fogtriggers[1].mySpawner.NumToSpawn)
+            {
+                if (!fogtriggers[1].finished)
+                {
+                    fogtriggers[1].Finished();
+                }
+            }
+        }
+        else if (fogtriggers[0].triggered && fogtriggers[0].mySpawner.numSpawned == fogtriggers[0].mySpawner.NumToSpawn)
+        {
+            if(numEnemiesKilled == fogtriggers[0].mySpawner.NumToSpawn)
+            {
+                if (!fogtriggers[0].finished)
+                {
+                    fogtriggers[0].Finished();
+                }
+            }
+        }
+    }
 }

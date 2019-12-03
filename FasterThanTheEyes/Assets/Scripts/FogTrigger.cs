@@ -5,12 +5,16 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class FogTrigger : MonoBehaviour
 {
-    private bool triggered = false;
+    public bool stageover = false;
+    public bool finished = false;
+    public bool triggered = false;
     [SerializeField]
-    private float minSize;
+    private float fogRadius;
+    [SerializeField]
+    private float originalfogRadius;
     [SerializeField]
     private float time;
-    private Spawner mySpawner;
+    public Spawner mySpawner;
     private Collider fogCollider;
     [SerializeField]
     private GameObject[] fightBlockers;
@@ -31,7 +35,7 @@ public class FogTrigger : MonoBehaviour
             if (other.gameObject.tag == "FogDestroyer")
             {
                 fogCollider = other;
-                fogCollider.GetComponent<CapsuleCollider>().radius = 10.0f;
+                originalfogRadius = fogCollider.GetComponent<CapsuleCollider>().radius;
             }
             foreach(GameObject fightBlocker in fightBlockers)
             {
@@ -41,10 +45,30 @@ public class FogTrigger : MonoBehaviour
     }
     private void Update()
     {
-        if(triggered)
+        if(!stageover)
         {
+            if (triggered)
+            {
 
-            Mathf.MoveTowards(fogCollider.GetComponent<CapsuleCollider>().radius, minSize, time / Time.deltaTime);
+                fogCollider.GetComponent<CapsuleCollider>().radius = Mathf.MoveTowards(fogCollider.GetComponent<CapsuleCollider>().radius, fogRadius, time / Time.deltaTime);
+            }
+            if (finished)
+            {
+                fogCollider.GetComponent<CapsuleCollider>().radius = Mathf.MoveTowards(fogCollider.GetComponent<CapsuleCollider>().radius, originalfogRadius, time / Time.deltaTime);
+                if (fogCollider.GetComponent<CapsuleCollider>().radius == originalfogRadius)
+                {
+                    stageover = true;
+                }
+            }
+        }
+    }
+    public void Finished()
+    {
+        finished = true;
+
+        foreach (GameObject fightBlocker in fightBlockers)
+        {
+            fightBlocker.SetActive(false);
         }
     }
 }
