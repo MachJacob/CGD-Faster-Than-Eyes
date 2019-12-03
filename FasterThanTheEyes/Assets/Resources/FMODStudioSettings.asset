@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: 
-  SourceProjectPathUnformatted: 
-  SourceBankPathUnformatted: 
+  sourceProjectPath: D:\CGD-Faster-Than-Eyes\MasterProject\fasterThanEyes.fspro
+  SourceProjectPathUnformatted: D:\CGD-Faster-Than-Eyes\MasterProject\fasterThanEyes.fspro
+  SourceBankPathUnformatted: D:\CGD-Faster-Than-Eyes\MasterProject\Build
   AutomaticEventLoading: 1
   AutomaticSampleLoading: 0
   ImportType: 0
@@ -33,18 +33,20 @@ MonoBehaviour:
   - Platform: 1
     Value: 1
   - Platform: 2
-    Value: 0
+    Value: 1
   OverlaySettings:
   - Platform: 1
     Value: 1
   - Platform: 2
-    Value: 0
+    Value: 1
   LoggingSettings:
   - Platform: 1
     Value: 1
   - Platform: 2
     Value: 0
-  BankDirectorySettings: []
+  BankDirectorySettings:
+  - Platform: 2
+    Value: Desktop
   VirtualChannelSettings:
   - Platform: 1
     Value: 1024
@@ -56,5 +58,5 @@ MonoBehaviour:
   - Platform: 2
     Value: 32
   Plugins: []
-  MasterBank: 
+  MasterBank: Master Bank
   Banks: []
