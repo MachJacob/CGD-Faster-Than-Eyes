@@ -8,7 +8,7 @@
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000014A6CD3F8E8 isAsync 1 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001B151C55F08 isAsync 1 updatePeriod 0.02
 [LOG] Thread::initThread                       : Init FMOD Studio update thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
@@ -23,530 +23,470 @@
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
 [ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3224256
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 98112
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003E5CDFF4EC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000078EDEFF14C
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC25B0D9C0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC25B0D990
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC25B0DA90
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC25B0DB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000014A5F7BB488
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AF910E5498
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Reaper_MKNIG_24_48_MENUSOUNDS_UI Click', format=2, channels=1, frequency=48000, lengthbytes=800, lengthpcm=49611, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Leather Creaks-007', format=2, channels=1, frequency=48000, lengthbytes=7360, lengthpcm=37606, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.275844.
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3224256
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 98112
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003E5CDFF4EC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000078EDEFF14C
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC25B0D9C0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC25B0D990
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC25B0DA90
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC25B0DB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000014B92477C88
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AF910E5498
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Reaper_MKNIG_24_48_MENUSOUNDS_UI Confirm', format=2, channels=1, frequency=48000, lengthbytes=4128, lengthpcm=19307, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.522901.
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Cloth Movement-002', format=2, channels=1, frequency=48000, lengthbytes=2496, lengthpcm=25972, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.079177.
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3224256
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 98112
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003E5CDFF4EC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000078EDEFF14C
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC25B0D9C0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC25B0D990
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC25B0DA90
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC25B0DB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000014B924760E8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AF910E5498
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThatTheEyes_Logic_MWALL_24_48_Footsteps_Stone_002', format=2, channels=1, frequency=48000, lengthbytes=4224, lengthpcm=72000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.222911.
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Reaper_JWatson_24_48_Breathing_Breath_001-003', format=2, channels=2, frequency=48000, lengthbytes=32224, lengthpcm=181753, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.189819.
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3224256
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 98112
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003E5CDFF4EC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000078EDEFF14C
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC25B0D9C0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC25B0D990
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC25B0DA90
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC25B0DB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000014B924760E8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AF910E5498
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThatTheEyes_Logic_MWALL_24_48_Footsteps_Stone_005', format=2, channels=1, frequency=48000, lengthbytes=4320, lengthpcm=72000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.380215.
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Reaper_JWatson_24_48_Breathing_Breath2_001-001', format=2, channels=2, frequency=48000, lengthbytes=7264, lengthpcm=81324, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.122711.
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3224256
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 98112
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003E5CDFF4EC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000078EDEFF14C
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC25B0D9C0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC25B0D990
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC25B0DA90
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC25B0DB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000014B924760E8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AF910E5498
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Logic_MWALL_16_48_Footstep_Wood_001', format=2, channels=2, frequency=48000, lengthbytes=8384, lengthpcm=32800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.023926.
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Reaper_JWatson_24_48_Breathing_Breath_001-001', format=2, channels=2, frequency=48000, lengthbytes=35776, lengthpcm=197829, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.138458.
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3224256
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 98112
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003E5CDFF4EC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000078EDEFF14C
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC25B0D9C0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC25B0D990
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC25B0DA90
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC25B0DB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000014B924760E8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AF910E5498
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Logic_MWALL_24_48_Footstep_Metal_002', format=2, channels=2, frequency=48000, lengthbytes=5056, lengthpcm=23976, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.441742.
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Leather Creaks-001', format=2, channels=1, frequency=48000, lengthbytes=5728, lengthpcm=30268, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.436179.
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3224256
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 98112
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003E5CDFF4EC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000078EDEFF14C
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC25B0D9C0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC25B0D990
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC25B0DA90
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC25B0DB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000014B924760E8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AF910E5498
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Logic_MWALL_16_48_Footstep_Wood_003', format=2, channels=2, frequency=48000, lengthbytes=8384, lengthpcm=32800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.031586.
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Leather Creaks-006', format=2, channels=1, frequency=48000, lengthbytes=8128, lengthpcm=41275, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.628559.
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3224256
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 98112
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003E5CDFF4EC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000078EDEFF14C
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC25B0D9C0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC25B0D990
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC25B0DA90
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC25B0DB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000014B924760E8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AF910E5498
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Logic_MWALL_24_48_Footstep_Grass_002', format=2, channels=1, frequency=48000, lengthbytes=4544, lengthpcm=72000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.074781.
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Reaper_JWatson_24_48_Breathing_Breath2_001-003', format=2, channels=2, frequency=48000, lengthbytes=6240, lengthpcm=76913, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.125824.
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3224256
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 98112
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003E5CDFF4EC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000078EDEFF14C
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC25B0D9C0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC25B0D990
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC25B0DA90
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC25B0DB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000014B924760E8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AF910E5498
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Logic_MWALL_16_48_Footstep_Mud_006', format=2, channels=2, frequency=48000, lengthbytes=8704, lengthpcm=36251, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.348419.
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Armour Chinks-004', format=2, channels=1, frequency=48000, lengthbytes=16256, lengthpcm=66347, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.408405.
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3224256
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 98112
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003E5CDFF4EC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000078EDEFF14C
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC25B0D9C0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC25B0D990
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC25B0DA90
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC25B0DB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000014B924760E8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AF910E5498
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Logic_MWALL_24_48_Footstep_Grass_003', format=2, channels=1, frequency=48000, lengthbytes=4608, lengthpcm=72000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.026875.
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Reaper_JWatson_24_48_Breathing_Breath2_001-002', format=2, channels=2, frequency=48000, lengthbytes=7872, lengthpcm=85244, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.191681.
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3224256
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 98112
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003E5CDFF4EC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000078EDEFF14C
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC25B0D9C0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC25B0D990
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC25B0DA90
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC25B0DB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000014B924760E8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AF910E5498
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Logic_MWALL_24_48_Footstep_Metal_003', format=2, channels=2, frequency=48000, lengthbytes=5024, lengthpcm=23976, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.634340.
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Leather Creaks-003', format=2, channels=1, frequency=48000, lengthbytes=7712, lengthpcm=36230, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.353409.
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3224256
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 98112
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003E5CDFF4EC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000078EDEFF14C
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC25B0D9C0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC25B0D990
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC25B0DA90
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC25B0DB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000014B924760E8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AF910E5498
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Logic_MWALL_16_48_Footstep_Mud_004', format=2, channels=2, frequency=48000, lengthbytes=6272, lengthpcm=22775, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.320313.
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Cloth Movement-005', format=2, channels=1, frequency=48000, lengthbytes=2720, lengthpcm=28606, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.073281.
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3224256
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 98112
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003E5CDFF4EC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000078EDEFF14C
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC25B0D9C0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC25B0D990
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC25B0DA90
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC25B0DB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000014B924760E8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AF910E5498
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Logic_MWALL_16_48_Footstep_Mud_003', format=2, channels=2, frequency=48000, lengthbytes=7488, lengthpcm=29325, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.192047.
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Reaper_JWatson_24_48_Breathing_Breath3_001-003', format=2, channels=2, frequency=48000, lengthbytes=5504, lengthpcm=74765, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.024864.
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3224256
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 98112
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003E5CDFF4EC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000078EDEFF14C
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC25B0D9C0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC25B0D990
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC25B0DA90
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC25B0DB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000014B924760E8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AF910E5498
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Logic_MWALL_16_48_Footstep_Mud_001', format=2, channels=2, frequency=48000, lengthbytes=7872, lengthpcm=34925, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.677521.
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Reaper_JWatson_24_48_Breathing_Breath3_001-002', format=2, channels=2, frequency=48000, lengthbytes=6464, lengthpcm=80256, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.031495.
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3224256
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 98112
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003E5CDFF4EC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000078EDEFF14C
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC25B0D9C0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC25B0D990
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC25B0DA90
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC25B0DB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000014B924760E8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AF910E5498
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Logic_MWALL_24_48_Footstep_Grass_004', format=2, channels=1, frequency=48000, lengthbytes=4480, lengthpcm=72000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.024670.
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Reaper_JWatson_24_48_Breathing_Breath3_001-004', format=2, channels=2, frequency=48000, lengthbytes=7040, lengthpcm=82314, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.037635.
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3224256
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 98112
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003E5CDFF4EC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000078EDEFF14C
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC25B0D9C0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC25B0D990
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC25B0DA90
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC25B0DB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000014B924760E8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AF910E5498
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThatTheEyes_Logic_MWALL_24_48_Footsteps_Stone_001', format=2, channels=1, frequency=48000, lengthbytes=4352, lengthpcm=72000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.290093.
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Reaper_JWatson_24_48_Breathing_Breath3_001-001', format=2, channels=2, frequency=48000, lengthbytes=5312, lengthpcm=74079, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.044372.
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3224256
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 98112
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003E5CDFF4EC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000078EDEFF14C
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC25B0D9C0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC25B0D990
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC25B0DA90
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC25B0DB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000014B924760E8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AF910E5498
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Logic_MWALL_24_48_Footstep_Metal_005', format=2, channels=2, frequency=48000, lengthbytes=5056, lengthpcm=24070, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.500340.
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Leather Creaks-002', format=2, channels=1, frequency=48000, lengthbytes=7456, lengthpcm=35771, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.511783.
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3224256
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 98112
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003E5CDFF4EC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000078EDEFF14C
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC25B0D9C0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC25B0D990
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC25B0DA90
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC25B0DB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000014B924760E8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AF910E5498
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Logic_MWALL_24_48_Footstep_Metal_001', format=2, channels=2, frequency=48000, lengthbytes=5216, lengthpcm=23976, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.603036.
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Armour Chinks-001', format=2, channels=1, frequency=48000, lengthbytes=9760, lengthpcm=44035, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.526127.
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3224256
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 98112
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003E5CDFF4EC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000078EDEFF14C
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC25B0D9C0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC25B0D990
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC25B0DA90
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC25B0DB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000014B924760E8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AF910E5498
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Logic_MWALL_16_48_Footstep_Wood_004', format=2, channels=2, frequency=48000, lengthbytes=8384, lengthpcm=32800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.014618.
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Reaper_JWatson_24_48_Breathing_Breath_001-002', format=2, channels=2, frequency=48000, lengthbytes=33888, lengthpcm=189328, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.147186.
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3224256
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 98112
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003E5CDFF4EC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000078EDEFF14C
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC25B0D9C0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC25B0D990
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC25B0DA90
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC25B0DB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000014B924760E8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AF910E5498
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThatTheEyes_Logic_MWALL_24_48_Footsteps_Stone_004', format=2, channels=1, frequency=48000, lengthbytes=4384, lengthpcm=72000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.334150.
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Leather Creaks-004', format=2, channels=1, frequency=48000, lengthbytes=7552, lengthpcm=36230, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.429929.
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3224256
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 98112
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003E5CDFF4EC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000078EDEFF14C
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC25B0D9C0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC25B0D990
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC25B0DA90
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC25B0DB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000014B924760E8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AF910E5498
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Logic_MWALL_16_48_Footstep_Mud_002', format=2, channels=2, frequency=48000, lengthbytes=6368, lengthpcm=25000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.134216.
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Armour Chinks-002', format=2, channels=1, frequency=48000, lengthbytes=14176, lengthpcm=56327, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.381060.
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3224256
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 98112
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003E5CDFF4EC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000078EDEFF14C
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC25B0D9C0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC25B0D990
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC25B0DA90
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC25B0DB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000014B924760E8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AF910E5498
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Logic_MWALL_24_48_Footstep_Grass_005', format=2, channels=1, frequency=48000, lengthbytes=4736, lengthpcm=72000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.049457.
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Reaper_JWatson_24_48_Breathing_Breath2_001-004', format=2, channels=2, frequency=48000, lengthbytes=7264, lengthpcm=82304, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.163177.
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3224256
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 98112
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003E5CDFF4EC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000078EDEFF14C
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC25B0D9C0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC25B0D990
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC25B0DA90
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC25B0DB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000014B924760E8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AF910E5498
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Logic_MWALL_16_48_Footstep_Wood_002', format=2, channels=2, frequency=48000, lengthbytes=8448, lengthpcm=32800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.011292.
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Leather Creaks-005', format=2, channels=1, frequency=48000, lengthbytes=5792, lengthpcm=33019, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.178888.
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3224256
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 98112
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003E5CDFF4EC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000078EDEFF14C
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC25B0D9C0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC25B0D990
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC25B0DA90
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC25B0DB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000014B924760E8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AF910E5498
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Logic_MWALL_16_48_Footstep_Mud_005', format=2, channels=2, frequency=48000, lengthbytes=9440, lengthpcm=40026, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.377197.
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Armour Chinks-005', format=2, channels=1, frequency=48000, lengthbytes=12992, lengthpcm=51026, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.409933.
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3224256
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 98112
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003E5CDFF4EC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000078EDEFF14C
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC25B0D9C0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC25B0D990
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC25B0DA90
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC25B0DB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000014B924760E8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AF910E5498
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Logic_MWALL_24_48_Footstep_Metal_004', format=2, channels=2, frequency=48000, lengthbytes=5120, lengthpcm=23928, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.632091.
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Reaper_JWatson_24_48_Breathing_Breath_001-004', format=2, channels=2, frequency=48000, lengthbytes=36480, lengthpcm=200159, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.200745.
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3224256
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 98112
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003E5CDFF4EC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000078EDEFF14C
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC25B0D9C0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC25B0D990
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC25B0DA90
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC25B0DB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000014B924760E8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AF910E5498
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Logic_MWALL_24_48_Footstep_Grass_001', format=2, channels=1, frequency=48000, lengthbytes=4640, lengthpcm=72000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.064880.
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Cloth Movement-003', format=2, channels=1, frequency=48000, lengthbytes=2144, lengthpcm=24795, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.104555.
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3224256
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 98112
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000003E5CDFF4EC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000078EDEFF14C
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC25B0D9C0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC25B0D990
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC25B0DA90
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC25B0DB50
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000014B924760E8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AF910E5498
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThatTheEyes_Logic_MWALL_24_48_Footsteps_Stone_003', format=2, channels=1, frequency=48000, lengthbytes=4064, lengthpcm=72000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.183711.
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Cloth Movement-004', format=2, channels=1, frequency=48000, lengthbytes=2688, lengthpcm=27679, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.339573.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3224256
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 98112
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000078EDEFF14C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC25B0D9C0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC25B0D990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC25B0DA90
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC25B0DB50
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AF910E5498
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Cloth Movement-001', format=2, channels=1, frequency=48000, lengthbytes=2112, lengthpcm=25265, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.043489.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3224256
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 98112
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000078EDEFF14C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC25B0D9C0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC25B0D990
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC25B0DA90
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC25B0DB50
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001AF910E5498
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Armour Chinks-003', format=2, channels=1, frequency=48000, lengthbytes=12064, lengthpcm=48960, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.380620.
 [ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
 [ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
 [ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
@@ -597,379 +537,64 @@
 [ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
 [ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
 [ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[LOG] SystemI::createSound                     : filename = D:\CGD-Faster-Than-Eyes\MasterProject\Build\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Priority: 1, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] SystemI::createSound                     : setdata soundi = 0000014A59908348 : node = 0000014A4EDF7B40
-[LOG] SystemI::createSound                     : add node to async list : head = 0000014A50B7B1E8.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000014A59908348
-[LOG] SystemI::createSoundInternal             :     Create name='D:\CGD-Faster-Than-Eyes\MasterProject\Build\Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3224256
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 98112
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000014A4EDF7C58
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 50000
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='191130_GamJammyMainLoop', format=2, channels=2, frequency=48000, lengthbytes=1267136, lengthpcm=4800000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.616455.
-[LOG] Thread::initThread                       :     Init FMOD file thread. Priority: 1, Stack Size: 16384, Semaphore: No, Sleep Time: 10, Looping: Yes.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000014A59908348
-[LOG] SoundI::getSubSound                      : sound 0000014A59908348.  Subsound index 0 / 1
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[LOG] SoundI::release                          : 191130_GamJammyMainLoop (0000014A59908348)
-[LOG] SoundI::release                          :     191130_GamJammyMainLoop (0000014A59680FE8)
-[LOG] SoundI::release                          :     191130_GamJammyMainLoop (0000014A599084F8)
-[LOG] SoundI::release                          :  (0000014A707B6618)
-[LOG] SoundI::release                          :     FasterThanTheEyes_Reaper_MKNIG_24_48_MENUSOUNDS_UI Confirm (0000014A6FF5D9C8)
-[LOG] SoundI::release                          :  (0000014D01DD1908)
-[LOG] SoundI::release                          :     FasterThanTheEyes_Reaper_MKNIG_24_48_MENUSOUNDS_UI Click (0000014A5F93FBB8)
-[LOG] SoundI::release                          :  (0000014A4EB30938)
-[LOG] SoundI::release                          :     FasterThanTheEyes_Logic_MWALL_16_48_Footstep_Mud_001 (0000014D01FCF6D8)
-[LOG] SoundI::release                          :  (0000014A4ED05BE8)
-[LOG] SoundI::release                          :     FasterThanTheEyes_Logic_MWALL_16_48_Footstep_Mud_002 (0000014A53D3E798)
-[LOG] SoundI::release                          :  (0000014A4EB30658)
-[LOG] SoundI::release                          :     FasterThanTheEyes_Logic_MWALL_16_48_Footstep_Mud_003 (0000014D01FCF538)
-[LOG] SoundI::release                          :  (0000014A4EB304E8)
-[LOG] SoundI::release                          :     FasterThanTheEyes_Logic_MWALL_16_48_Footstep_Mud_004 (0000014D01FCF398)
-[LOG] SoundI::release                          :  (0000014A4ED054B8)
-[LOG] SoundI::release                          :     FasterThanTheEyes_Logic_MWALL_16_48_Footstep_Mud_005 (0000014B92C1D748)
-[LOG] SoundI::release                          :  (0000014A4EB30D88)
-[LOG] SoundI::release                          :     FasterThanTheEyes_Logic_MWALL_16_48_Footstep_Mud_006 (0000014D01FCF878)
-[LOG] SoundI::release                          :  (0000014D01FA8328)
-[LOG] SoundI::release                          :     FasterThanTheEyes_Logic_MWALL_24_48_Footstep_Grass_001 (0000014B92C1D408)
-[LOG] SoundI::release                          :  (0000014A4EB307C8)
-[LOG] SoundI::release                          :     FasterThanTheEyes_Logic_MWALL_24_48_Footstep_Grass_002 (0000014D01FCFA18)
-[LOG] SoundI::release                          :  (0000014A4ED05628)
-[LOG] SoundI::release                          :     FasterThanTheEyes_Logic_MWALL_24_48_Footstep_Grass_004 (0000014A53D3EE18)
-[LOG] SoundI::release                          :  (0000014A4ED051D8)
-[LOG] SoundI::release                          :     FasterThanTheEyes_Logic_MWALL_24_48_Footstep_Grass_005 (0000014A53D3E5F8)
-[LOG] SoundI::release                          :  (0000014A4ED05908)
-[LOG] SoundI::release                          :     FasterThanTheEyes_Logic_MWALL_24_48_Footstep_Metal_001 (0000014A53D3EC78)
-[LOG] SoundI::release                          :  (0000014A4EB30AA8)
-[LOG] SoundI::release                          :     FasterThanTheEyes_Logic_MWALL_24_48_Footstep_Metal_002 (0000014D01FCFEF8)
-[LOG] SoundI::release                          :  (0000014A4EB30098)
-[LOG] SoundI::release                          :     FasterThanTheEyes_Logic_MWALL_24_48_Footstep_Metal_003 (0000014D01FCFD58)
-[LOG] SoundI::release                          :  (0000014D01FA7918)
-[LOG] SoundI::release                          :     FasterThanTheEyes_Logic_MWALL_24_48_Footstep_Metal_004 (0000014B92C1DC28)
-[LOG] SoundI::release                          :  (0000014A4ED05A78)
-[LOG] SoundI::release                          :     FasterThanTheEyes_Logic_MWALL_24_48_Footstep_Metal_005 (0000014A53D3E938)
-[LOG] SoundI::release                          :  (0000014A4EB30208)
-[LOG] SoundI::release                          :     FasterThanTheEyes_Logic_MWALL_16_48_Footstep_Wood_001 (0000014A6FF5D828)
-[LOG] SoundI::release                          :  (0000014A4ED05348)
-[LOG] SoundI::release                          :     FasterThanTheEyes_Logic_MWALL_16_48_Footstep_Wood_002 (0000014A53D3E2B8)
-[LOG] SoundI::release                          :  (0000014A4EB30378)
-[LOG] SoundI::release                          :     FasterThanTheEyes_Logic_MWALL_16_48_Footstep_Wood_003 (0000014D01FD0098)
-[LOG] SoundI::release                          :  (0000014A4ED05798)
-[LOG] SoundI::release                          :     FasterThanTheEyes_Logic_MWALL_16_48_Footstep_Wood_004 (0000014A53D3E118)
-[LOG] SoundI::release                          :  (0000014A4ED05EC8)
-[LOG] SoundI::release                          :     FasterThatTheEyes_Logic_MWALL_24_48_Footsteps_Stone_001 (0000014A53D3E458)
-[LOG] SoundI::release                          :  (0000014A707B6788)
-[LOG] SoundI::release                          :     FasterThatTheEyes_Logic_MWALL_24_48_Footsteps_Stone_002 (0000014A6FF5D4E8)
-[LOG] SoundI::release                          :  (0000014D01FA8498)
-[LOG] SoundI::release                          :     FasterThatTheEyes_Logic_MWALL_24_48_Footsteps_Stone_003 (0000014B92C1D8E8)
-[LOG] SoundI::release                          :  (0000014A4ED05D58)
-[LOG] SoundI::release                          :     FasterThatTheEyes_Logic_MWALL_24_48_Footsteps_Stone_004 (0000014A53D3EAD8)
-[LOG] SoundI::release                          :  (0000014A707B6A68)
-[LOG] SoundI::release                          :     FasterThatTheEyes_Logic_MWALL_24_48_Footsteps_Stone_005 (0000014A6FF5D688)
-[LOG] SoundI::release                          :  (0000014A4EB30C18)
-[LOG] SoundI::release                          :     FasterThanTheEyes_Logic_MWALL_24_48_Footstep_Grass_003 (0000014D01FCFBB8)
+[LOG] SoundI::release                          :  (000001AFF389B708)
+[LOG] SoundI::release                          :     FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Cloth Movement-001 (000001AFE6001C58)
+[LOG] SoundI::release                          :  (000001AFF389A178)
+[LOG] SoundI::release                          :     FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Cloth Movement-003 (000001AFE6001AB8)
+[LOG] SoundI::release                          :  (000001AFF389B428)
+[LOG] SoundI::release                          :     FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Cloth Movement-004 (000001AFE6000DB8)
+[LOG] SoundI::release                          :  (000001AFEF6D5128)
+[LOG] SoundI::release                          :     FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Cloth Movement-005 (000001AFE874DDC8)
+[LOG] SoundI::release                          :  (000001AFEF6D59C8)
+[LOG] SoundI::release                          :     FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Armour Chinks-001 (000001AFE874EAC8)
+[LOG] SoundI::release                          :  (000001AFEF6D5F88)
+[LOG] SoundI::release                          :     FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Armour Chinks-002 (000001AFE6000C18)
+[LOG] SoundI::release                          :  (000001AFF389A2E8)
+[LOG] SoundI::release                          :     FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Armour Chinks-003 (000001AFE6000258)
+[LOG] SoundI::release                          :  (000001AFEF6D6828)
+[LOG] SoundI::release                          :     FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Armour Chinks-004 (000001AFE874DA88)
+[LOG] SoundI::release                          :  (000001AFF389A5C8)
+[LOG] SoundI::release                          :     FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Armour Chinks-005 (000001AFE6001918)
+[LOG] SoundI::release                          :  (000001AFEF6D4E48)
+[LOG] SoundI::release                          :     FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Leather Creaks-001 (000001AFE874D8E8)
+[LOG] SoundI::release                          :  (000001AFEF6D5858)
+[LOG] SoundI::release                          :     FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Leather Creaks-002 (000001AFE874E928)
+[LOG] SoundI::release                          :  (000001AFEF6D6C78)
+[LOG] SoundI::release                          :     FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Leather Creaks-003 (000001AFE874DC28)
+[LOG] SoundI::release                          :  (000001AFEF6D5E18)
+[LOG] SoundI::release                          :     FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Leather Creaks-004 (000001AFE6001778)
+[LOG] SoundI::release                          :  (000001AFF3899E98)
+[LOG] SoundI::release                          :     FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Leather Creaks-005 (000001AFE6001DF8)
+[LOG] SoundI::release                          :  (000001AFEF6D56E8)
+[LOG] SoundI::release                          :     FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Leather Creaks-006 (000001AFE874E2A8)
+[LOG] SoundI::release                          :  (000001AFFA8D4598)
+[LOG] SoundI::release                          :     FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Leather Creaks-007 (000001AFE874F488)
+[LOG] SoundI::release                          :  (000001AFFA8D3A18)
+[LOG] SoundI::release                          :     FasterThanTheEyes_Reaper_MKNIG_24_48_ARMOUR_Cloth Movement-002 (000001AFE874EE08)
+[LOG] SoundI::release                          :  (000001AFEF6D5408)
+[LOG] SoundI::release                          :     FasterThanTheEyes_Reaper_JWatson_24_48_Breathing_Breath3_001-001 (000001AFE874E788)
+[LOG] SoundI::release                          :  (000001AFEF6D6548)
+[LOG] SoundI::release                          :     FasterThanTheEyes_Reaper_JWatson_24_48_Breathing_Breath3_001-002 (000001AFE874DF68)
+[LOG] SoundI::release                          :  (000001AFEF6D4FB8)
+[LOG] SoundI::release                          :     FasterThanTheEyes_Reaper_JWatson_24_48_Breathing_Breath3_001-003 (000001AFE874F148)
+[LOG] SoundI::release                          :  (000001AFEF6D5298)
+[LOG] SoundI::release                          :     FasterThanTheEyes_Reaper_JWatson_24_48_Breathing_Breath3_001-004 (000001AFE874E5E8)
+[LOG] SoundI::release                          :  (000001AFFA8D4148)
+[LOG] SoundI::release                          :     FasterThanTheEyes_Reaper_JWatson_24_48_Breathing_Breath2_001-001 (000001AFE874EFA8)
+[LOG] SoundI::release                          :  (000001AFEF6D6B08)
+[LOG] SoundI::release                          :     FasterThanTheEyes_Reaper_JWatson_24_48_Breathing_Breath2_001-002 (000001AFE874EC68)
+[LOG] SoundI::release                          :  (000001AFEF6D5578)
+[LOG] SoundI::release                          :     FasterThanTheEyes_Reaper_JWatson_24_48_Breathing_Breath2_001-003 (000001AFE874E448)
+[LOG] SoundI::release                          :  (000001AFF389B598)
+[LOG] SoundI::release                          :     FasterThanTheEyes_Reaper_JWatson_24_48_Breathing_Breath2_001-004 (000001AFE60000B8)
+[LOG] SoundI::release                          :  (000001AFEF6D5CA8)
+[LOG] SoundI::release                          :     FasterThanTheEyes_Reaper_JWatson_24_48_Breathing_Breath_001-002 (000001AFE60008D8)
+[LOG] SoundI::release                          :  (000001AFFA8D3FD8)
+[LOG] SoundI::release                          :     FasterThanTheEyes_Reaper_JWatson_24_48_Breathing_Breath_001-003 (000001AFE874E108)
+[LOG] SoundI::release                          :  (000001AFF389AE68)
+[LOG] SoundI::release                          :     FasterThanTheEyes_Reaper_JWatson_24_48_Breathing_Breath_001-004 (000001AFE6000A78)
+[LOG] SoundI::release                          :  (000001AFEF6D5B38)
+[LOG] SoundI::release                          :     FasterThanTheEyes_Reaper_JWatson_24_48_Breathing_Breath_001-001 (000001AFE874F628)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
@@ -979,6 +604,4 @@
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
-[LOG] Thread::callback                         : FMOD file thread finished.
 [LOG] SystemI::close                           : Closed.
