@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{f05458c3-314c-46e5-bd8d-133913db8fc9}">
+        <property name="assetPath">
+            <value>FasterThanTheEyes_Reaper_JWatson_24_48_Bell_Belltoll_001-002.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>2.9133560090702946</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{e53f00c9-e5bf-40ca-b2c0-1c36d8db4bd1}</destination>
+        </relationship>
+    </object>
+</objects>
