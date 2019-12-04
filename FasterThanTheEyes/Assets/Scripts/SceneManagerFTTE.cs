@@ -87,8 +87,8 @@ public class SceneManagerFTTE : MonoBehaviour
             Music.setParameterValue("Stage", menu);
             CheckFogTriggers();
            // need way of knowing how many enemies currently spawned and how much mist is in the level
-            // Music.setParameterByName("NumberEnemies", 0.0f);
-           // Music.setParameterByName("MistAmount", 0.0f);
+            // Music.setParameterValue("NumberEnemies", 0.0f);
+           // Music.setParameterValue("MistAmount", 0.0f);
         }
 
     }
